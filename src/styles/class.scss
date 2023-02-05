@@ -54,6 +54,18 @@
   text-transform: uppercase;
 }
 
+.subtitle-base {
+  color: var(--subtitle-base-color);
+  font: var(--subtitle-base-font);
+  font-weight: var(--subtitle-base-weight);
+  text-align: var(--subtitle-base-align);
+  text-transform: inherit;
+}
+
+.subtitle-base::first-letter {
+  text-transform: uppercase;
+}
+
 .title-base-inner {
   color: var(--title-inner-color);
   font: var(--title-inner-font);

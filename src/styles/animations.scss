@@ -1,0 +1,21 @@
+@keyframes write {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.write {
+  animation: write 2s steps(22);
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes tip {
+  from { border-color: transparent }
+  to { border-color: var(--light-color) }
+}
+
+.tip {
+  animation:  tip .5s infinite;
+  border-right: .1rem solid;
+}

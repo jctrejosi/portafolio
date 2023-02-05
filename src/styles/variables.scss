@@ -33,9 +33,14 @@
   /* -------------- Fonts ---------------- */
 
   --title-base-color:            var(--purple-color);
-  --title-base-font:             2.4rem var(--main-font);
+  --title-base-font:             4.4rem var(--main-font);
   --title-base-weight:           bold;
   --title-base-align:            left;
+
+  --subtitle-base-color:            var(--purple-color);
+  --subtitle-base-font:             4rem var(--main-font);
+  --subtitle-base-weight:           bold;
+  --subtitle-base-align:            left;
 
   --title-inner-color:           var(--purple-color);
   --title-inner-font:            1.5rem var(--main-font);
