@@ -1,13 +1,12 @@
 @keyframes write {
-  from { width: 0; }
-  to { width: 100%; }
+  0% { width: 0; }
+  100% { width: 100%; }
 }
 
-.write {
-  animation: write 2s steps(22);
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
+@keyframes writeDelay {
+  0% { width: 0; }
+  50% { width: 0; }
+  100% { width: 100%; }
 }
 
 @keyframes tip {
@@ -15,7 +14,14 @@
   to { border-color: var(--light-color) }
 }
 
-.tip {
-  animation:  tip .5s infinite;
-  border-right: .1rem solid;
+.write {
+  animation: write 2s steps(22, end), tip 1s;
+  border-right: .2rem solid transparent;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+
+  &:nth-child(2){
+    animation: writeDelay 4s steps(22, end), tip 1s infinite 2s;
+  }
 }
