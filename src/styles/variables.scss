@@ -1,60 +1,57 @@
 /* prettier-ignore */
-:root {
-  /* -------------- import fonts ---------------- */
-  --main-font:                   Agrandir-Narrow;
-  --custom-font:                 Josefin-Slab;
+  // ----------------- import fonts
+  $main-font:                      Agrandir-Narrow;
+  $ustom-font:                     Josefin-Slab;
 
-  /* -------------- Colors ---------------- */
+  // ----------------- Colors
 
-  --light-color:                 #fff;
-  --practically-light-color:     #e6e6e6;
-  --almost-light-color:          #ccc;
-  --nearly-light-color:          #b3b3b3;
-  --mid-light-color:             #555555;
-  --mid-color:                   #808080;
-  --mid-dark-color:              #666;
-  --nearly-dark-color:           #4d4d4d;
-  --almost-dark-color:           #333;
-  --practically-dark-color:      #1a1a1a;
-  --dark-color:                  #000;
+  $light-color:                    #fff;
+  $practically-light-color:        #e6e6e6;
+  $almost-light-color:             #ccc;
+  $nearly-light-color:             #b3b3b3;
+  $mid-light-color:                #555555;
+  $mid-color:                      #808080;
+  $mid-dark-color:                 #666;
+  $nearly-dark-color:              #4d4d4d;
+  $almost-dark-color:              #333;
+  $practically-dark-color:         #1a1a1a;
+  $dark-color:                     #000;
 
-  --main-color:                  #b691fe;
-  --custom-color:                #f28095;
-  --yellow-color:                #efbc7e;
-  --yellow-color-hover:          #d5aa74;
-  --purple-color:                #a77afe;
-  --gray-color:                  #eef0eb;
-  --blue-color:                  #a2d2ff;
+  $main-color:                     #06d6a0;
+  $custom-color:                   #118ab2;
+  $extra-color:                    #ef476f;
 
-  --bg-primary:                  #c7b3f2;
-  --bg-secondary:                #f2f2f2;
-  --bg-glass:                    rgba(242, 242, 242, 0.7);
+  $bg-primary:                     #c7b3f2;
+  $bg-secondary:                   #f2f2f2;
+  $bg-glass:                       rgba(242, 242, 242, 0.7);
 
-  /* -------------- Fonts ---------------- */
+  // ----------------- Fonts
 
-  --title-base-color:            var(--purple-color);
-  --title-base-font:             4.4rem var(--main-font);
-  --title-base-weight:           bold;
-  --title-base-align:            left;
+  $title-base-color:               $main-color;
+  $title-base-font:                4.4rem $main-font;
+  $title-base-font-responsive:     2.8rem $main-font;
+  $title-base-weight:              bold;
+  $title-base-align:               left;
 
-  --subtitle-base-color:            var(--purple-color);
-  --subtitle-base-font:             4rem var(--main-font);
-  --subtitle-base-weight:           bold;
-  --subtitle-base-align:            left;
+  $subtitle-base-color:            $main-color;
+  $subtitle-base-font:             4rem $main-font;
+  $subtitle-base-font-responsive:  2.4rem $main-font;
+  $subtitle-base-weight:           bold;
+  $subtitle-base-align:            left;
 
-  --title-inner-color:           var(--purple-color);
-  --title-inner-font:            1.5rem var(--main-font);
-  --title-inner-weight:          500;
-  --title-inner-align:           left;
+  $title-inner-color:              $main-color;
+  $title-inner-font:               1.5rem $main-font;
+  $title-inner-font-responsive:    1.2rem $main-font;
+  $title-inner-weight:             500;
+  $title-inner-align:              left;
 
-  --p-color:                     var(--almost-dark-color);
-  --p-font:                      1rem/1.4 var(--main-font);
-  --p-align:                     left;
+  $p-color:                        $almost-dark-color;
+  $p-font:                         1rem/1.4 $main-font;
+  $p-align:                        left;
 
-  /* -------------- Container ---------------- */
+  // ----------------- Container
 
-  --container-base-width:         120rem;
-  --container-base-padding:       2rem;
-  --container-base-margin:        2rem auto;
-  --container-base-display:       flex;
-}
+  $container-base-width:            120rem;
+  $container-base-padding:          2rem;
+  $container-base-margin:           2rem auto;
+  $container-base-display:          flex;

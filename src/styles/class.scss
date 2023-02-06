@@ -1,53 +1,57 @@
 /* ------------- Container ------------- */
 
 .container-base {
-  display: var(--container-base-display);
-  margin: var(--container-base-margin);
-  max-width: var(--container-base-width);
-  padding: var(--container-base-padding);
+  display: $container-base-display;
+  margin: $container-base-margin;
+  max-width: $container-base-width;
+  padding: $container-base-padding;
   width: 100%;
 }
 
 /* ------------- Buttons ------------- */
 
 .btn-secondary {
-  background-color: var(--main-color) !important;
+  background-color: $main-color !important;
   border-radius: 0.3rem;
-  color: var(--light-color);
-  font: 1rem var(--main-font);
+  color: $light-color;
+  font: 1rem $main-font;
   font-weight: 600;
   padding: 1rem 2rem;
   transition: all 0.3s;
 }
 
 .btn-secondary:hover {
-  background-color: var(--custom-color) !important;
+  background-color: $custom-color !important;
   text-decoration: underline;
 }
 
 .link-default {
-  background-color: var(--yellow-color);
+  background-color: $extra-color;
   border-radius: 0.3rem;
-  color: var(--light-color);
-  font: 1rem var(--main-font);
+  color: $light-color;
+  font: 1rem $main-font;
   font-weight: 600;
   padding: 1rem 2rem;
   transition: all 0.3s;
 }
 
 .link-default:hover {
-  background-color: var(--custom-color);
+  background-color: $custom-color;
   text-decoration: underline;
 }
 
 /* ------------- Texts ------------- */
 
 .title-base {
-  color: var(--title-base-color);
-  font: var(--title-base-font);
-  font-weight: var(--title-base-weight);
-  text-align: var(--title-base-align);
+  color: $title-base-color;
+  font: $title-base-font-responsive;
+  font-weight: $title-base-weight;
+  text-align: $title-base-align;
   text-transform: inherit;
+
+  @media (min-width: 769px) {
+    font: $title-base-font;
+  }
 }
 
 .title-base::first-letter {
@@ -55,11 +59,15 @@
 }
 
 .subtitle-base {
-  color: var(--subtitle-base-color);
-  font: var(--subtitle-base-font);
-  font-weight: var(--subtitle-base-weight);
-  text-align: var(--subtitle-base-align);
+  color: $subtitle-base-color;
+  font: $subtitle-base-font-responsive;
+  font-weight: $subtitle-base-weight;
+  text-align: $subtitle-base-align;
   text-transform: inherit;
+
+  @media (min-width: 769px) {
+    font: $subtitle-base-font;
+  }
 }
 
 .subtitle-base::first-letter {
@@ -67,11 +75,15 @@
 }
 
 .title-base-inner {
-  color: var(--title-inner-color);
-  font: var(--title-inner-font);
-  font-weight: var(--title-inner-weight);
-  text-align: var(--title-inner-align);
+  color: $title-inner-color;
+  font: $title-inner-font-responsive;
+  font-weight: $title-inner-weight;
+  text-align: $title-inner-align;
   text-transform: inherit;
+
+  @media (min-width: 769px) {
+    font: $title-inner-font;
+  }
 }
 
 .title-base-inner::first-letter {
@@ -79,9 +91,9 @@
 }
 
 .p-base {
-  color: var(--p-color);
-  font: var(--p-font);
-  text-align: var(--p-align);
+  color: $p-color;
+  font: $p-font;
+  text-align: $p-align;
   text-transform: lowercase;
 }
 

@@ -5,33 +5,29 @@ module.exports = {
     extend: {},
     colors: {
       // ------------- Gray Scale ----------------
-      "light-color": "var(--light-color)",
-      "practically-light-color": "var(--practically-light-color)",
-      "almost-light-color": "var(--almost-light-color)",
-      "nearly-light-color": "var(--nearly-light-color)",
-      "mid-light-color": "var(--mid-light-color)",
-      "mid-color": "var(--mid-color)",
-      "mid-dark-color": "var(--mid-dar-color)",
-      "nearly-dark-color": "var(--nearly-dark-color)",
-      "almost-dark-color": "var(--almost-dark-color)",
-      "practically-dark-color": "var(--practically-dark-color)",
-      "dark-color": "var(--dark-color)",
+      "light-color": "#fff",
+      "practically-light-color": "#e6e6e6",
+      "almost-light-color": "#ccc)",
+      "nearly-light-color": "#b3b3b3",
+      "mid-light-color": "#555555",
+      "mid-color": "#808080",
+      "mid-dark-color": "#666",
+      "nearly-dark-color": "#4d4d4d",
+      "almost-dark-color": "#333",
+      "practically-dark-color": "#1a1a1a",
+      "dark-color": "#000",
 
       // ------------- Base Colors ---------------
 
-      "main-color": "var(--main-color)",
-      "custom-color": "var(--custom-color)",
-      "yellow-color": "var(--yellow-color)",
-      "yellow-color-hover": "var(--yellow-color-hover)",
-      "purple-color": "var(--purple-color)",
-      "gray-color": "var(--gray-color)",
-      "blue-color": "var(--blue-color)",
+      "main-color": "#06d6a0",
+      "custom-color": "#118ab2",
+      "extra-color": "#ef476f",
 
       // -------- base backgrounds colors --------
 
-      primary: "var(--bg-primary)",
-      secondary: "var(--bg-secondary)",
-      glass: "var(--bg-glass)",
+      primary: "#c7b3f2",
+      secondary: "#f2f2f2",
+      glass: "rgba(242, 242, 242, 0.7)",
     },
     fontFamily: {
       main: ["Agrandir-Narrow"],

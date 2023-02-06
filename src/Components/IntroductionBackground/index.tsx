@@ -20,8 +20,8 @@ const IntroductionBackground = ({
         src={image}
         alt="introduction background"
       />
-      <div className="absolute flex-col flex h-screen left-0 top-0 justify-center items-left p-40">
-        <p className="title-base text-light-color write">
+      <div className=" max-w-[39ch] absolute flex-col flex left-0 top-0 bottom-0 right-0 m-auto justify-center items-center">
+        <p className="title-base text-light-color write flex-col md:flex-row">
           <span className="mr-4">{title}</span>
           <span className="text-main-color">{name}</span>
         </p>
