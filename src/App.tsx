@@ -1,9 +1,10 @@
 import IntroductionBackground from "./Components/IntroductionBackground";
+import SkillsGraphs from "./Components/SkillsGraphs";
 import { background } from "./Content/Home";
 
 const App = () => {
   return (
-    <div>
+    <div id="app">
       <IntroductionBackground
         image={background.image}
         title={background.title}
@@ -11,6 +12,9 @@ const App = () => {
         subtitle={background.subtitle}
         textButton={background.textButton}
       />
+      <SkillsGraphs />
+      <SkillsGraphs />
+      <SkillsGraphs />
     </div>
   );
 };

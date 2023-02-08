@@ -17,7 +17,7 @@ const IntroductionBackground = ({
   textButton,
 }: props): ReactElement => {
   return (
-    <div className="relative w-screen h-screen overlay">
+    <div className="relative w-full h-screen overlay">
       <img
         className="object-cover h-screen w-screen"
         src={image}

@@ -13,16 +13,21 @@
 .btn-secondary {
   align-items: center;
   background-color: transparent !important;
-  border: .2rem solid $main-color;
+  border: .1rem solid $main-color;
   border-radius: 0.3rem;
   color: $main-color;
   display: flex;
-  font: 1.4rem $main-font;
+  font: 1rem $main-font;
   font-weight: 600;
   padding: 1rem 2rem;
   text-transform: uppercase;
   transition: color .3s, border .3s;
   white-space: nowrap;
+
+  @media (min-width: 769px) {
+    border: .2rem solid $main-color;
+    font: 1.4rem $main-font;
+  }
 
   &:hover {
     border: .2rem solid $extra-color;
