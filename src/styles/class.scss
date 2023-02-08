@@ -11,18 +11,29 @@
 /* ------------- Buttons ------------- */
 
 .btn-secondary {
-  background-color: $main-color !important;
+  align-items: center;
+  background-color: transparent !important;
+  border: .2rem solid $main-color;
   border-radius: 0.3rem;
-  color: $light-color;
-  font: 1rem $main-font;
+  color: $main-color;
+  display: flex;
+  font: 1.4rem $main-font;
   font-weight: 600;
   padding: 1rem 2rem;
-  transition: all 0.3s;
-}
+  text-transform: uppercase;
+  transition: color .3s, border .3s;
+  white-space: nowrap;
 
-.btn-secondary:hover {
-  background-color: $custom-color !important;
-  text-decoration: underline;
+  &:hover {
+    border: .2rem solid $extra-color;
+    color: $extra-color;
+    text-decoration: underline;
+  }
+
+  svg {
+    margin-left: 1rem;
+    width: 2.2rem;
+  }
 }
 
 .link-default {

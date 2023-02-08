@@ -5,6 +5,7 @@ export const background = {
   title: "Hola, mi nombre es",
   name: "Juan Carlos Trejos",
   subtitle: "Y soy desarrollador Front-end",
+  textButton: "Conoce mi trabajo",
 };
 
 export default null;

@@ -1,10 +1,12 @@
 import { ReactElement } from "react";
+import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 
 interface props {
   image: string;
   title: string;
   name: string;
   subtitle: string;
+  textButton: string;
 }
 
 const IntroductionBackground = ({
@@ -12,6 +14,7 @@ const IntroductionBackground = ({
   title,
   name,
   subtitle,
+  textButton,
 }: props): ReactElement => {
   return (
     <div className="relative w-screen h-screen overlay">
@@ -26,6 +29,10 @@ const IntroductionBackground = ({
           <span className="text-main-color">{name}</span>
         </p>
         <p className="subtitle-base text-light-color write">{subtitle}</p>
+        <button type="button" className="btn-secondary mt-8">
+          {textButton}
+          <ArrowLongRightIcon />
+        </button>
       </div>
     </div>
   );

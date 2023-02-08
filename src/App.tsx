@@ -9,6 +9,7 @@ const App = () => {
         title={background.title}
         name={background.name}
         subtitle={background.subtitle}
+        textButton={background.textButton}
       />
     </div>
   );
