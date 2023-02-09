@@ -116,3 +116,14 @@
 .p-base::first-letter {
   text-transform: uppercase;
 }
+
+.label-base {
+  color: $label-color;
+  font: $label-font;
+  text-align: $label-align;
+  text-transform: inherit;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}

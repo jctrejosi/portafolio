@@ -8,4 +8,21 @@ export const background = {
   textButton: "Conoce mi trabajo",
 };
 
-export default null;
+export const titleSkills = "Habilidades";
+
+export const introductionSkills = "asd";
+
+export const skills = [
+  {
+    value: 100,
+    label: "HTML",
+  },
+  {
+    value: 60,
+    label: "CSS",
+  },
+  {
+    value: 60,
+    label: "Javascript",
+  },
+];

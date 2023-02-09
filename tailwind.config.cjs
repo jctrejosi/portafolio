@@ -25,7 +25,7 @@ module.exports = {
 
       // -------- base backgrounds colors --------
 
-      primary: "#c7b3f2",
+      primary: "#e6eef1",
       secondary: "#f2f2f2",
       glass: "rgba(242, 242, 242, 0.7)",
     },
