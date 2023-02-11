@@ -62,3 +62,38 @@ export const technicalSkills = {
     },
   ],
 };
+
+export const softSkills = {
+  title: "Habilidades blandas",
+  introduction: "",
+  skills: [
+    {
+      value: 80,
+      label: "Comunicación",
+    },
+    {
+      value: 75,
+      label: "Adaptabilidad",
+    },
+    {
+      value: 75,
+      label: "Trabajo en equipo",
+    },
+    {
+      value: 85,
+      label: "Responsabilidad",
+    },
+    {
+      value: 65,
+      label: "Gestión del tiempo",
+    },
+    {
+      value: 85,
+      label: "Productividad",
+    },
+    {
+      value: 90,
+      label: "Adaptabilidad",
+    },
+  ],
+};
