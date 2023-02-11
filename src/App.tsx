@@ -1,11 +1,6 @@
 import IntroductionBackground from "./Components/IntroductionBackground";
 import SkillsGraphs from "./Components/SkillsGraphs";
-import {
-  background,
-  skills,
-  titleSkills,
-  introductionSkills,
-} from "./Content/Home";
+import { background, technicalSkills } from "./Content/Home";
 
 const App = () => {
   return (
@@ -18,9 +13,9 @@ const App = () => {
         textButton={background.textButton}
       />
       <SkillsGraphs
-        skills={skills}
-        title={titleSkills}
-        introduction={introductionSkills}
+        skills={technicalSkills.skills}
+        title={technicalSkills.title}
+        introduction={technicalSkills.introduction}
       />
     </div>
   );

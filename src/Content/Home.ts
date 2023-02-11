@@ -8,57 +8,57 @@ export const background = {
   textButton: "Conoce mi trabajo",
 };
 
-export const titleSkills = "Habilidades técnicas";
-
-export const introductionSkills = "";
-
-export const skills = [
-  {
-    value: 80,
-    label: "Vue.js",
-  },
-  {
-    value: 70,
-    label: "React.js",
-  },
-  {
-    value: 75,
-    label: "ES6",
-  },
-  {
-    value: 85,
-    label: "HTML",
-  },
-  {
-    value: 85,
-    label: "CSS",
-  },
-  {
-    value: 75,
-    label: "Sass",
-  },
-  {
-    value: 75,
-    label: "Tailwind",
-  },
-  {
-    value: 80,
-    label: "Git",
-  },
-  {
-    value: 60,
-    label: "Docker",
-  },
-  {
-    value: 70,
-    label: "Linux",
-  },
-  {
-    value: 50,
-    label: "SQL",
-  },
-  {
-    value: 45,
-    label: "Node.js",
-  },
-];
+export const technicalSkills = {
+  title: "Habilidades técnicas",
+  introduction: "",
+  skills: [
+    {
+      value: 80,
+      label: "Vue.js",
+    },
+    {
+      value: 70,
+      label: "React.js",
+    },
+    {
+      value: 75,
+      label: "ES6",
+    },
+    {
+      value: 85,
+      label: "HTML",
+    },
+    {
+      value: 85,
+      label: "CSS",
+    },
+    {
+      value: 75,
+      label: "Sass",
+    },
+    {
+      value: 75,
+      label: "Tailwind",
+    },
+    {
+      value: 80,
+      label: "Git",
+    },
+    {
+      value: 60,
+      label: "Docker",
+    },
+    {
+      value: 70,
+      label: "Linux",
+    },
+    {
+      value: 50,
+      label: "SQL",
+    },
+    {
+      value: 45,
+      label: "Node.js",
+    },
+  ],
+};
