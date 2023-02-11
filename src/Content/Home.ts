@@ -8,21 +8,57 @@ export const background = {
   textButton: "Conoce mi trabajo",
 };
 
-export const titleSkills = "Habilidades";
+export const titleSkills = "Habilidades técnicas";
 
-export const introductionSkills = "asd";
+export const introductionSkills = "";
 
 export const skills = [
   {
-    value: 100,
+    value: 80,
+    label: "Vue.js",
+  },
+  {
+    value: 70,
+    label: "React.js",
+  },
+  {
+    value: 75,
+    label: "ES6",
+  },
+  {
+    value: 85,
     label: "HTML",
   },
   {
-    value: 60,
+    value: 85,
     label: "CSS",
   },
   {
+    value: 75,
+    label: "Sass",
+  },
+  {
+    value: 75,
+    label: "Tailwind",
+  },
+  {
+    value: 80,
+    label: "Git",
+  },
+  {
     value: 60,
-    label: "Javascript",
+    label: "Docker",
+  },
+  {
+    value: 70,
+    label: "Linux",
+  },
+  {
+    value: 50,
+    label: "SQL",
+  },
+  {
+    value: 45,
+    label: "Node.js",
   },
 ];

@@ -1,16 +1,12 @@
 /* ------------- Container ------------- */
 
-.container-base {
-  display: $container-base-display;
-  margin: $container-base-margin;
-  max-width: $container-base-width;
-  padding: $container-base-padding;
+article {
   width: 100%;
 }
 
 /* ------------- Buttons ------------- */
 
-.btn-secondary {
+button[type = button] {
   align-items: center;
   background-color: transparent !important;
   border: .1rem solid $main-color;
@@ -41,7 +37,7 @@
   }
 }
 
-.link-default {
+a {
   background-color: $extra-color;
   border-radius: 0.3rem;
   color: $light-color;
@@ -49,75 +45,77 @@
   font-weight: 600;
   padding: 1rem 2rem;
   transition: all 0.3s;
-}
 
-.link-default:hover {
-  background-color: $custom-color;
-  text-decoration: underline;
+  &:hover {
+    background-color: $custom-color;
+    text-decoration: underline;
+  }
 }
 
 /* ------------- Texts ------------- */
 
-.title-base {
-  color: $title-base-color;
-  font: $title-base-font-responsive;
-  font-weight: $title-base-weight;
-  text-align: $title-base-align;
+h1 {
+  color: $h1-color;
+  font-family: $h1-font;
+  font-size: $h1-size-mobile;
+  font-weight: $h1-weight;
+  text-align: $h1-align;
   text-transform: inherit;
 
   @media (min-width: 769px) {
-    font: $title-base-font;
+    font-size: $h1-size;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
   }
 }
 
-.title-base::first-letter {
-  text-transform: uppercase;
-}
-
-.subtitle-base {
-  color: $subtitle-base-color;
-  font: $subtitle-base-font-responsive;
-  font-weight: $subtitle-base-weight;
-  text-align: $subtitle-base-align;
+h2 {
+  color: $h2-color;
+  font-family: $h2-font;
+  font-size: $h2-size-mobile;
+  font-weight: $h2-weight;
+  text-align: $h2-align;
   text-transform: inherit;
 
   @media (min-width: 769px) {
-    font: $subtitle-base-font;
+    font-size: $h2-size;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
   }
 }
 
-.subtitle-base::first-letter {
-  text-transform: uppercase;
-}
-
-.title-base-inner {
-  color: $title-inner-color;
-  font: $title-inner-font-responsive;
-  font-weight: $title-inner-weight;
-  text-align: $title-inner-align;
+h3 {
+  color: $h3-color;
+  font: $h3-size-mobile $h3-font;
+  font-weight: $h3-weight;
+  text-align: $h3-align;
   text-transform: inherit;
 
   @media (min-width: 769px) {
-    font: $title-inner-font;
+    font: $h3-size $h3-font;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
   }
 }
 
-.title-base-inner::first-letter {
-  text-transform: uppercase;
-}
-
-.p-base {
+p {
   color: $p-color;
-  font: $p-font;
+  font: $p-size / #{$p-height} $p-font;
   text-align: $p-align;
   text-transform: lowercase;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
 }
 
-.p-base::first-letter {
-  text-transform: uppercase;
-}
-
-.label-base {
+label {
   color: $label-color;
   font: $label-font;
   text-align: $label-align;

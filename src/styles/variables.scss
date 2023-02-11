@@ -1,61 +1,74 @@
 /* prettier-ignore */
   // ----------------- import fonts
-  $main-font:                      Agrandir-Narrow;
-  $ustom-font:                     Josefin-Slab;
+  $main-font:                           theme("fontFamily.main");
+  $custom-font:                         theme("fontFamily.custom");
 
   // ----------------- Colors
 
-  $light-color:                    #fff;
-  $practically-light-color:        #e6e6e6;
-  $almost-light-color:             #ccc;
-  $nearly-light-color:             #b3b3b3;
-  $mid-light-color:                #555555;
-  $mid-color:                      #808080;
-  $mid-dark-color:                 #666;
-  $nearly-dark-color:              #4d4d4d;
-  $almost-dark-color:              #333;
-  $practically-dark-color:         #1a1a1a;
-  $dark-color:                     #000;
+  $light-color:                         theme("colors.light-color");
+  $practically-light-color:             theme("colors.practically-light-color");
+  $almost-light-color:                  theme("colors.almost-light-color");
+  $nearly-light-color:                  theme("colors.nearly-light-color");
+  $mid-light-color:                     theme("colors.mid-light-color");
+  $mid-color:                           theme("colors.mid-color");
+  $mid-dark-color:                      theme("colors.mid-dark-color");
+  $nearly-dark-color:                   theme("colors.nearly-dark-color");
+  $almost-dark-color:                   theme("colors.almost-dark-color");
+  $practically-dark-color:              theme("colors.practically-dark-color");
+  $dark-color:                          theme("colors.dark-color");
 
-  $main-color:                     #06d6a0;
-  $custom-color:                   #118ab2;
-  $extra-color:                    #ef476f;
+  $main-color:                          theme("colors.main-color");
+  $custom-color:                        theme("colors.custom-color");
+  $extra-color:                         theme("colors.extra-color");
 
-  $bg-primary:                     #c7b3f2;
-  $bg-secondary:                   #f2f2f2;
-  $bg-glass:                       rgba(242, 242, 242, 0.7);
+  $bg-primary:                          theme("colors.primary");
+  $bg-secondary:                        theme("colors.secondary");
+  $bg-glass:                            theme("colors.glass");
+
+  // ----------------- Screen
+
+  $xs:                                  theme("screens.xs");
+  $sm:                                  theme("screens.sm");
+  $md:                                  theme("screens.md");
+  $lg:                                  theme("screens.lg");
+  $xl:                                  theme("screens.xl");
 
   // ----------------- Fonts
 
-  $title-base-color:               $main-color;
-  $title-base-font:                4.4rem $main-font;
-  $title-base-font-responsive:     2.8rem $main-font;
-  $title-base-weight:              bold;
-  $title-base-align:               left;
+  $h1-color:                            $light-color;
+  $h1-font:                             $main-font;
+  $h1-size:                             4.4rem;
+  $h1-size-mobile:                      2.8rem;
+  $h1-weight:                           500;
+  $h1-align:                            left;
 
-  $subtitle-base-color:            $main-color;
-  $subtitle-base-font:             4rem $main-font;
-  $subtitle-base-font-responsive:  2.4rem $main-font;
-  $subtitle-base-weight:           bold;
-  $subtitle-base-align:            left;
+  $h2-color:                            $light-color;
+  $h2-font:                             $main-font;
+  $h2-size:                             4rem;
+  $h2-size-mobile:                      2.4rem;
+  $h2-weight:                           500;
+  $h2-align:                            left;
 
-  $title-inner-color:              $main-color;
-  $title-inner-font:               1.5rem $main-font;
-  $title-inner-font-responsive:    1.2rem $main-font;
-  $title-inner-weight:             500;
-  $title-inner-align:              left;
+  $h3-color:                            $light-color;
+  $h3-font:                             $main-font;
+  $h3-size:                             4rem;
+  $h3-size-mobile:                      2.4rem;
+  $h3-weight:                           500;
+  $h3-align:                            left;
 
-  $p-color:                        $almost-dark-color;
-  $p-font:                         1rem/1.4 $main-font;
-  $p-align:                        left;
+  $p-color:                             $almost-dark-color;
+  $p-font:                              $main-font;
+  $p-size:                              1.6rem;
+  $p-height:                            1.4;
+  $p-align:                             left;
 
-  $label-color:                        $almost-dark-color;
-  $label-font:                         1.8rem $main-font;
-  $label-align:                        left;
+  $label-color:                         $almost-dark-color;
+  $label-font:                          1.8rem $main-font;
+  $label-align:                         left;
 
   // ----------------- Container
 
-  $container-base-width:            120rem;
-  $container-base-padding:          2rem;
-  $container-base-margin:           2rem auto;
-  $container-base-display:          flex;
+  $container-base-width:                120rem;
+  $container-base-padding:              2rem;
+  $container-base-margin:               2rem auto;
+  $container-base-display:              flex;
