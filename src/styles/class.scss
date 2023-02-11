@@ -37,21 +37,6 @@ button[type = button] {
   }
 }
 
-a {
-  background-color: $extra-color;
-  border-radius: 0.3rem;
-  color: $light-color;
-  font: 1rem $main-font;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  transition: all 0.3s;
-
-  &:hover {
-    background-color: $custom-color;
-    text-decoration: underline;
-  }
-}
-
 /* ------------- Texts ------------- */
 
 h1 {

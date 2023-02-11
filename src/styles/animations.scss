@@ -1,6 +1,6 @@
 @keyframes write {
   0% { width: 0; }
-  100% { width: 37ch; }
+  100% { width: 34ch; }
 }
 
 @keyframes writeResponsive {
@@ -27,7 +27,7 @@
   white-space: nowrap;
 
   @media (min-width: 769px) {
-    animation: write 2s steps(37, end), tip 1s;
+    animation: write 2s steps(34, end), tip 1s;
   }
 
   &:nth-child(2){
