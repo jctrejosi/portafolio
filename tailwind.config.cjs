@@ -22,6 +22,8 @@ module.exports = {
       "custom-color": "#118ab2",
       "extra-color": "#ef476f",
 
+      "blue-color": "#080F54",
+
       // -------- base backgrounds colors --------
 
       primary: "#e6eef1",
@@ -29,8 +31,8 @@ module.exports = {
       glass: "rgba(242, 242, 242, 0.7)",
     },
     fontFamily: {
-      main: ["Agrandir-Narrow"],
-      custom: ["Josefin-Slab"],
+      main: ["Futura"],
+      custom: ["Nexa"],
     },
     screens: {
       xs: "365px",

@@ -1,9 +1,13 @@
 @font-face {
-  font-family: "Agrandir-Narrow";
-  src: local("sans"), url(../assets/fonts/AgrandirNarrow.ttf) format("truetype");
+  font-family: "Futura";
+  font-style: normal;
+  src: local("sans"), url(../assets/fonts/Futura_PT_Medium.woff2) format("truetype");
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Josefin-Slab";
-  src: local("sans"), url(../assets/fonts/JosefinSlab.ttf) format("truetype");
+  font-family: "Nexa";
+  font-style: normal;
+  src: local("sans"), url(../assets/fonts/Nexa_Light.woff2) format("truetype");
+  font-display: swap;
 }
