@@ -21,6 +21,8 @@
   $custom-color:                        theme("colors.custom-color");
   $extra-color:                         theme("colors.extra-color");
 
+  $blue-color:                          theme("colors.blue-color");
+
   $bg-primary:                          theme("colors.primary");
   $bg-secondary:                        theme("colors.secondary");
   $bg-glass:                            theme("colors.glass");
@@ -38,31 +40,52 @@
   $h1-color:                            $light-color;
   $h1-font:                             $main-font;
   $h1-size:                             4.4rem;
-  $h1-size-mobile:                      2.8rem;
-  $h1-weight:                           500;
+  $h1-size-mobile:                      3rem;
+  $h1-weight:                           700;
   $h1-align:                            left;
 
   $h2-color:                            $light-color;
   $h2-font:                             $main-font;
   $h2-size:                             4rem;
-  $h2-size-mobile:                      2.4rem;
-  $h2-weight:                           500;
+  $h2-size-mobile:                      2.8rem;
+  $h2-weight:                           700;
   $h2-align:                            left;
 
   $h3-color:                            $light-color;
   $h3-font:                             $main-font;
-  $h3-size:                             4rem;
+  $h3-size:                             3.4rem;
   $h3-size-mobile:                      2.4rem;
-  $h3-weight:                           500;
+  $h3-weight:                           600;
   $h3-align:                            left;
 
-  $p-color:                             $almost-dark-color;
+  $h4-color:                            $light-color;
+  $h4-font:                             $main-font;
+  $h4-size:                             3rem;
+  $h4-size-mobile:                      2rem;
+  $h4-weight:                           600;
+  $h4-align:                            left;
+
+  $h5-color:                            $light-color;
+  $h5-font:                             $main-font;
+  $h5-size:                             2.4rem;
+  $h5-size-mobile:                      2rem;
+  $h5-weight:                           500;
+  $h5-align:                            left;
+
+  $h6-color:                            $light-color;
+  $h6-font:                             $main-font;
+  $h6-size:                             2rem;
+  $h6-size-mobile:                      1.8rem;
+  $h6-weight:                           500;
+  $h6-align:                            left;
+
+  $p-color:                             $blue-color;
   $p-font:                              $main-font;
   $p-size:                              1.6rem;
   $p-height:                            1.4;
   $p-align:                             left;
 
-  $label-color:                         $almost-dark-color;
+  $label-color:                         $blue-color;
   $label-font:                          1.8rem $main-font;
   $label-align:                         left;
 

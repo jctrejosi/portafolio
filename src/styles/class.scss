@@ -20,7 +20,7 @@ button[type = button] {
   transition: color .3s, border .3s;
   white-space: nowrap;
 
-  @media (min-width: 769px) {
+  @include breakpoint (md) {
     border: .2rem solid $main-color;
     font: 1.4rem $main-font;
   }
@@ -39,6 +39,17 @@ button[type = button] {
 
 /* ------------- Texts ------------- */
 
+label {
+  color: $label-color;
+  font: $label-font;
+  text-align: $label-align;
+  text-transform: inherit;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
 h1 {
   color: $h1-color;
   font-family: $h1-font;
@@ -47,7 +58,7 @@ h1 {
   text-align: $h1-align;
   text-transform: inherit;
 
-  @media (min-width: 769px) {
+  @include breakpoint (md) {
     font-size: $h1-size;
   }
 
@@ -64,7 +75,7 @@ h2 {
   text-align: $h2-align;
   text-transform: inherit;
 
-  @media (min-width: 769px) {
+  @include breakpoint (md) {
     font-size: $h2-size;
   }
 
@@ -75,13 +86,65 @@ h2 {
 
 h3 {
   color: $h3-color;
-  font: $h3-size-mobile $h3-font;
+  font-family: $h3-font;
+  font-size: $h3-size-mobile;
   font-weight: $h3-weight;
   text-align: $h3-align;
   text-transform: inherit;
 
-  @media (min-width: 769px) {
-    font: $h3-size $h3-font;
+  @include breakpoint (md) {
+    font-size: $h3-size;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+h4 {
+  color: $h4-color;
+  font-family: $h4-font;
+  font-size: $h4-size-mobile;
+  font-weight: $h4-weight;
+  text-align: $h4-align;
+  text-transform: inherit;
+
+  @include breakpoint (md) {
+    font-size: $h4-size;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+h5 {
+  color: $h5-color;
+  font-family: $h5-font;
+  font-size: $h5-size-mobile;
+  font-weight: $h5-weight;
+  text-align: $h5-align;
+  text-transform: inherit;
+
+  @include breakpoint (md) {
+    font-size: $h5-size;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+h6 {
+  color: $h6-color;
+  font-family: $h6-font;
+  font-size: $h6-size-mobile;
+  font-weight: $h6-weight;
+  text-align: $h6-align;
+  text-transform: inherit;
+
+  @include breakpoint (md) {
+    font-size: $h6-size;
   }
 
   &::first-letter {
@@ -91,20 +154,11 @@ h3 {
 
 p {
   color: $p-color;
-  font: $p-size / #{$p-height} $p-font;
+  font-family: $p-font;
+  font-size: $p-size;
+  line-height: $p-height;
   text-align: $p-align;
   text-transform: lowercase;
-
-  &::first-letter {
-    text-transform: uppercase;
-  }
-}
-
-label {
-  color: $label-color;
-  font: $label-font;
-  text-align: $label-align;
-  text-transform: inherit;
 
   &::first-letter {
     text-transform: uppercase;

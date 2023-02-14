@@ -1,4 +1,5 @@
 import imageBg from "../assets/images/introductionBg.webp";
+import responsive from "../assets/images/responsive.webp";
 
 export const background = {
   image: imageBg,
@@ -49,16 +50,32 @@ export const technicalSkills = {
       label: "Docker",
     },
     {
-      value: 70,
-      label: "Linux",
-    },
-    {
       value: 50,
       label: "SQL",
     },
     {
       value: 45,
       label: "Node.js",
+    },
+  ],
+  skillsGeneric: [
+    {
+      icon: responsive,
+      title: "Diseño responsivo",
+      description:
+        "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
+    },
+    {
+      icon: responsive,
+      title: "Diseño responsivo",
+      description:
+        "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
+    },
+    {
+      icon: responsive,
+      title: "Diseño Responsivo",
+      description:
+        "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
   ],
 };
@@ -70,10 +87,6 @@ export const softSkills = {
     {
       value: 80,
       label: "Comunicación",
-    },
-    {
-      value: 75,
-      label: "Adaptabilidad",
     },
     {
       value: 75,
@@ -94,6 +107,23 @@ export const softSkills = {
     {
       value: 90,
       label: "Adaptabilidad",
+    },
+  ],
+  skillsGeneric: [
+    {
+      icon: responsive,
+      title: "title",
+      description: "",
+    },
+    {
+      icon: responsive,
+      title: "title",
+      description: "description",
+    },
+    {
+      icon: responsive,
+      title: "title",
+      description: "description",
     },
   ],
 };

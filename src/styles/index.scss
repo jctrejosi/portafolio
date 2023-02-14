@@ -21,7 +21,6 @@ body, #root {
 #app {
   max-height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 
   &::-webkit-scrollbar {
     appearance: none;
@@ -41,9 +40,5 @@ body, #root {
     &-corner {
       background-color: transparent;
     }
-  }
-
-  & > article {
-    scroll-snap-align: start;
   }
 }

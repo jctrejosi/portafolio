@@ -17,11 +17,13 @@ const App = () => {
         skills={technicalSkills.skills}
         title={technicalSkills.title}
         introduction={technicalSkills.introduction}
+        generalSkills={technicalSkills.skillsGeneric}
       />
       <SkillsGraphs
         skills={softSkills.skills}
         title={softSkills.title}
         introduction={softSkills.introduction}
+        generalSkills={softSkills.skillsGeneric}
       />
       <WhatsappPopup />
     </div>
