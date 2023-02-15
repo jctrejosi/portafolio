@@ -6,7 +6,7 @@ module.exports = {
       // ------------- Gray Scale ----------------
       "light-color": "#fff",
       "practically-light-color": "#e6e6e6",
-      "almost-light-color": "#ccc)",
+      "almost-light-color": "#ccc",
       "nearly-light-color": "#b3b3b3",
       "mid-light-color": "#555555",
       "mid-color": "#808080",
@@ -22,13 +22,14 @@ module.exports = {
       "custom-color": "#118ab2",
       "extra-color": "#ef476f",
 
-      "blue-color": "#080F54",
+      "blue-color": "#2f3895",
 
       // -------- base backgrounds colors --------
 
       primary: "#e6eef1",
       secondary: "#f2f2f2",
-      glass: "rgba(242, 242, 242, 0.7)",
+      "glass-400": "rgba(0, 0, 25, 0.4)",
+      "glass-700": "rgba(0, 0, 25, 0.7)",
     },
     fontFamily: {
       main: ["Futura"],

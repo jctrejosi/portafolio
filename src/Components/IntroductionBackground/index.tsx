@@ -27,7 +27,7 @@ const IntroductionBackground = ({
           <span className="text-main-color">{name}</span>
         </h1>
         <h2 className="write">{subtitle}</h2>
-        <button type="button" className="btn-secondary mt-8">
+        <button type="submit" className="mt-8">
           {textButton}
           <ArrowLongRightIcon />
         </button>

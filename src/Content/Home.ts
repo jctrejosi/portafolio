@@ -9,6 +9,36 @@ export const background = {
   textButton: "Conoce mi trabajo",
 };
 
+export const jobs = [
+  {
+    title: "title1",
+    image: "https://dummyimage.com/350x350/695369/fff",
+    language: "language",
+    url: "www.google.com",
+    description: "description asdadf asdfasfadsf dasfasdfdasf",
+    technologies: ["js", "vue", "otra"],
+    participation: 80,
+  },
+  {
+    title: "title2",
+    image: "https://dummyimage.com/350x350/696969/fff",
+    language: "language",
+    url: "www.google.com",
+    description: "description asdadf asdfasfadsf dasfasdfdasf",
+    technologies: ["js", "vue", "otra"],
+    participation: 100,
+  },
+  {
+    title: "title3",
+    image: "https://dummyimage.com/350x350/535353/fff",
+    language: "language",
+    url: "www.google.com",
+    description: "description asdadf asdfasfadsf dasfasdfdasf",
+    technologies: ["js", "vue", "otra"],
+    participation: 40,
+  },
+];
+
 export const technicalSkills = {
   title: "Habilidades técnicas",
   introduction: "",
@@ -61,19 +91,19 @@ export const technicalSkills = {
   skillsGeneric: [
     {
       icon: responsive,
-      title: "Diseño responsivo",
+      title: "Diseño responsivo1",
       description:
         "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
     {
       icon: responsive,
-      title: "Diseño responsivo",
+      title: "Diseño responsivo2",
       description:
         "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
     {
       icon: responsive,
-      title: "Diseño Responsivo",
+      title: "Diseño Responsivo3",
       description:
         "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
@@ -112,12 +142,12 @@ export const softSkills = {
   skillsGeneric: [
     {
       icon: responsive,
-      title: "title",
+      title: "title1",
       description: "",
     },
     {
       icon: responsive,
-      title: "title",
+      title: "title2",
       description: "description",
     },
     {

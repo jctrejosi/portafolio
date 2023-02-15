@@ -1,0 +1,29 @@
+button.btn-close {
+  align-items: center;
+  background-color: transparent;
+  border-width: 0;
+  color: $main-color;
+  display: flex;
+  font: 2rem $main-font;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  transition: color .3s, border .3s;
+  white-space: nowrap;
+
+  @include breakpoint (md) {
+    border: 0;
+    font: 2rem $main-font;
+  }
+
+  &:hover {
+    border: 0;
+    color: $extra-color;
+    text-decoration: underline;
+  }
+
+  svg {
+    margin-left: 1rem;
+    width: 2.2rem;
+  }
+}

@@ -8,7 +8,10 @@ interface props {
 const skillsIcon = ({ generalSkills }: props): ReactElement => {
   const genericSkills = generalSkills.map((element) => {
     return (
-      <li className="p-4 flex flex-col items-center">
+      <li
+        key={`general-skill-${element.title}`}
+        className="p-4 flex flex-col items-center"
+      >
         <div className="burst flex w-32 h-32 md:w-40 md:h-40 justify-center items-center">
           <img
             src={element.icon}

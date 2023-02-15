@@ -1,7 +1,8 @@
 import IntroductionBackground from "./Components/IntroductionBackground";
+import JobsList from "./Components/JobsList";
 import SkillsGraphs from "./Components/SkillsGraphs";
 import WhatsappPopup from "./Components/WhatsappPopup";
-import { background, technicalSkills, softSkills } from "./Content/Home";
+import { background, technicalSkills, softSkills, jobs } from "./Content/Home";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         subtitle={background.subtitle}
         textButton={background.textButton}
       />
+      <JobsList jobs={jobs} />
       <SkillsGraphs
         skills={technicalSkills.skills}
         title={technicalSkills.title}
