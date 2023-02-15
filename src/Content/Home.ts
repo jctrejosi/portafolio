@@ -1,5 +1,7 @@
 import imageBg from "../assets/images/introductionBg.webp";
 import responsive from "../assets/images/responsive.webp";
+import github from "../assets/images/github.webp";
+import gitlab from "../assets/images/gitlab.webp";
 
 export const background = {
   image: imageBg,
@@ -8,6 +10,19 @@ export const background = {
   subtitle: "Y soy desarrollador Front-end",
   textButton: "Conoce mi trabajo",
 };
+
+export const gitPopups = [
+  {
+    text: "jctrejosi",
+    url: "https://github.com/jctrejosi",
+    icon: github,
+  },
+  {
+    text: "juan.trejos",
+    url: "https://git.roiback.com/juan.trejos",
+    icon: gitlab,
+  },
+];
 
 export const jobs = [
   {

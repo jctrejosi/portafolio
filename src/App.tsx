@@ -2,7 +2,14 @@ import IntroductionBackground from "./Components/IntroductionBackground";
 import JobsList from "./Components/JobsList";
 import SkillsGraphs from "./Components/SkillsGraphs";
 import WhatsappPopup from "./Components/WhatsappPopup";
-import { background, technicalSkills, softSkills, jobs } from "./Content/Home";
+import GitPopup from "./Components/GitPopup";
+import {
+  background,
+  technicalSkills,
+  softSkills,
+  jobs,
+  gitPopups,
+} from "./Content/Home";
 
 const App = () => {
   return (
@@ -28,6 +35,7 @@ const App = () => {
         generalSkills={softSkills.skillsGeneric}
       />
       <WhatsappPopup />
+      <GitPopup icons={gitPopups} />
     </div>
   );
 };

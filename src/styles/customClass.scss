@@ -27,3 +27,29 @@ button.btn-close {
     width: 2.2rem;
   }
 }
+
+button.btn-close-sm {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 1rem;
+  border-width: .1rem;
+  border-color: $main-color;
+  background-color: $bg-glass-700;
+  border-style: solid;
+  color: $main-color;
+  display: flex;
+  font: 1rem $main-font;
+  font-weight: 600;
+  padding: .2rem .5rem;
+  text-transform: uppercase;
+  transition: color .3s, border .3s;
+  white-space: nowrap;
+
+  @include breakpoint (sm) {
+    display: none;
+  }
+
+  &:hover {
+    color: $extra-color;
+  }
+}
