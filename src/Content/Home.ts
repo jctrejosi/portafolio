@@ -172,3 +172,29 @@ export const softSkills = {
     },
   ],
 };
+
+export const footer = {
+  socialNets: [
+    {
+      icon: github,
+      url: "www.google.com",
+    },
+    {
+      icon: github,
+      url: "ww.",
+    },
+    {
+      icon: github,
+      url: "ww.",
+    },
+    {
+      icon: github,
+      url: "ww.",
+    },
+    {
+      icon: github,
+      url: "ww.",
+    },
+  ],
+  phrase: "Entre más sopla el viento más firmes son las raíces del árbol",
+};

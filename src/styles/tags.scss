@@ -90,6 +90,20 @@ a {
 
 /* ------------- Texts ------------- */
 
+input {
+  border-radius: .4rem;
+  color: $dark-color;
+  font: 1.5rem $main-font;
+  padding: .5rem 1rem;
+}
+
+textarea {
+  border-radius: .4rem;
+  color: $dark-color;
+  font: 1.5rem $custom-font;
+  padding: 1rem 1rem;
+}
+
 label {
   color: $label-color;
   font: $label-font;

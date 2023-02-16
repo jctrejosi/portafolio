@@ -3,12 +3,14 @@ import JobsList from "./Components/JobsList";
 import SkillsGraphs from "./Components/SkillsGraphs";
 import WhatsappPopup from "./Components/WhatsappPopup";
 import GitPopup from "./Components/GitPopup";
+import Footer from "./Components/Footer";
 import {
   background,
   technicalSkills,
   softSkills,
   jobs,
   gitPopups,
+  footer,
 } from "./Content/Home";
 
 const App = () => {
@@ -36,6 +38,7 @@ const App = () => {
       />
       <WhatsappPopup />
       <GitPopup icons={gitPopups} />
+      <Footer socialNets={footer.socialNets} phrase={footer.phrase} />
     </div>
   );
 };
