@@ -17,7 +17,7 @@ const JobsList = ({ jobs }: props): ReactElement => {
         key={`job-${element.title}`}
         className="group w-full sm:w-1/2 xl:w-1/4 relative overflow-hidden"
       >
-        <img className="w-full" src={element.image} alt="" />
+        <img className="w-full object-cover" src={element.image} alt="" />
         <div className="absolute top-0 left-0 bg-glass-400 md:bg-glass-700 w-full h-full p-8 md:translate-y-full items-start justify-end flex flex-col group-hover:translate-y-0 transition-transform duration-300">
           <h5 className="md:group-hover:bottom-auto md:bottom-[25rem] relative">
             {element.title}

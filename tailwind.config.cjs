@@ -28,8 +28,15 @@ module.exports = {
 
       primary: "#e6eef1",
       secondary: "#f2f2f2",
+      "glass-100": "rgba(0, 0, 25, 0.1)",
+      "glass-200": "rgba(0, 0, 25, 0.2)",
+      "glass-300": "rgba(0, 0, 25, 0.3)",
       "glass-400": "rgba(0, 0, 25, 0.4)",
+      "glass-500": "rgba(0, 0, 25, 0.5)",
+      "glass-600": "rgba(0, 0, 25, 0.6)",
       "glass-700": "rgba(0, 0, 25, 0.7)",
+      "glass-800": "rgba(0, 0, 25, 0.8)",
+      "glass-900": "rgba(0, 0, 25, 0.9)",
     },
     fontFamily: {
       main: ["Futura"],

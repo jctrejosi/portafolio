@@ -68,7 +68,9 @@ button[type = button] {
 }
 
 a {
+  align-items: center;
   color: $main-color;
+  display: flex;
   font-weight: 500;
   font: 1.4rem $main-font;
   text-decoration: underline;
@@ -78,6 +80,11 @@ a {
 
   &:hover {
     color: $extra-color;
+  }
+
+  svg {
+    margin-left: .3rem;
+    width: 1.2rem;
   }
 }
 
