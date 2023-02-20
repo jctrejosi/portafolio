@@ -15,7 +15,8 @@ html {
   font-size: 10px;
 }
 
-body, #root {
+body,
+#root {
   overflow-y: hidden;
 }
 
@@ -28,14 +29,14 @@ body, #root {
     -webkit-appearance: none;
 
     &:vertical {
-      width: .5rem;
+      width: 0.5rem;
       background-color: rgba(78, 78, 78, 1);
     }
 
     &-thumb {
       background-color: #797979;
       border-radius: 2rem;
-      border: .1rem solid #f1f2f3;
+      border: 0.1rem solid #f1f2f3;
     }
 
     &-corner {

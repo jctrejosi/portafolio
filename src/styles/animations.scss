@@ -1,27 +1,45 @@
 @keyframes write {
-  0% { width: 0; }
-  100% { width: 30ch; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30ch;
+  }
 }
 
 @keyframes writeResponsive {
-  0% { width: 0; }
-  100% { width: 18ch; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 18ch;
+  }
 }
 
 @keyframes writeDelay {
-  0% { width: 0; }
-  50% { width: 0; }
-  100% { width: 28ch; }
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 28ch;
+  }
 }
 
 @keyframes tip {
-  from { border-color: transparent }
-  to { border-color: var(--light-color) }
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: var(--light-color);
+  }
 }
 
 .write {
   animation: writeResponsive 2s steps(18, end), tip 1s;
-  border-right: .2rem solid transparent;
+  border-right: 0.2rem solid transparent;
   display: flex;
   overflow: hidden;
   white-space: nowrap;
@@ -30,7 +48,7 @@
     animation: write 2s steps(30, end), tip 1s;
   }
 
-  &:nth-child(2){
+  &:nth-child(2) {
     animation: writeDelay 4s steps(28, end), tip 1s infinite 2s;
   }
 }

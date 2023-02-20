@@ -1,12 +1,11 @@
 $breakpoints: (
-  xl:     '(min-width: #{$xl})',
-  lg:     '(min-width: #{$lg})',
-  md:     '(min-width: #{$md})',
-  sm:     '(min-width: #{$sm})',
+  xl: "(min-width: #{$xl})",
+  lg: "(min-width: #{$lg})",
+  md: "(min-width: #{$md})",
+  sm: "(min-width: #{$sm})",
 );
 
 @mixin breakpoint($device) {
-
   @if not map-has-key($breakpoints, $device) {
     @error 'Device value (#{$device}) is unknown';
   }
@@ -18,8 +17,8 @@ $breakpoints: (
 
 .overlay {
   &::before {
-    background-color: rgba(0, 0, 0, .7);
-    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
     height: 100%;
     left: 0;
     position: absolute;
@@ -35,7 +34,7 @@ $breakpoints: (
   &::before {
     background-color: $custom-color;
     border-radius: 1.5rem;
-    content: '';
+    content: "";
     height: 8rem;
     position: absolute;
     transform: rotate(20deg);
@@ -51,7 +50,7 @@ $breakpoints: (
   &::after {
     background-color: $custom-color;
     border-radius: 1.5rem;
-    content: '';
+    content: "";
     height: 8rem;
     position: absolute;
     transform: rotate(155deg);
