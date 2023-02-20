@@ -8,7 +8,7 @@ interface props {
 const SocialNets = ({ socialNets }: props): ReactElement => {
   const items = socialNets.map((element) => {
     return (
-      <li>
+      <li key={`social-neet-footer-${element.url}`}>
         <a
           href={element.url}
           className="flex justify-center items-center mx-4 rounded-full border-light-color p-3 border-2 hover:bg-extra-color transition-colors duration-300"

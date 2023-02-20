@@ -10,6 +10,7 @@ const GitPopup = ({ icons }: props): ReactElement => {
   const list = icons.map((element) => {
     return (
       <a
+        key={`git-popup-${element.url}`}
         href={element.url}
         className="group flex items-center mr-4"
         target="_blank"

@@ -51,7 +51,7 @@ const JobsList = ({ jobs }: props): ReactElement => {
   });
 
   return (
-    <section>
+    <section id="jobs">
       <ul className="flex flex-wrap max-h-screen">{jobsList}</ul>
       <Modal item={jobFocus} show={isShowing} hide={toggle} />
     </section>

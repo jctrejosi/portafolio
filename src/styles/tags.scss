@@ -6,15 +6,17 @@ article {
 
 /* ------------- Buttons ------------- */
 
-button[type = submit] {
+button[type = submit],
+input[type = submit] {
   align-items: center;
   background-color: transparent;
-  border: .1rem solid $main-color;
   border-radius: 0.3rem;
+  border: .1rem solid $main-color;
   color: $main-color;
+  cursor: pointer;
   display: flex;
-  font: 1.4rem $main-font;
   font-weight: 600;
+  font: 1.4rem $main-font;
   padding: 1rem 2rem;
   text-transform: uppercase;
   transition: color .3s, border .3s;

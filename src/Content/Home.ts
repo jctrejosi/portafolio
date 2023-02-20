@@ -202,19 +202,19 @@ export const footer = {
     },
     {
       icon: github,
-      url: "ww.",
+      url: "ww.asd",
     },
     {
       icon: github,
-      url: "ww.",
+      url: "ww.adf2",
     },
     {
       icon: github,
-      url: "ww.",
+      url: "ww.fas23",
     },
     {
       icon: github,
-      url: "ww.",
+      url: "ww.fasdw2",
     },
   ],
   phrase: "Entre más sopla el viento más firmes son las raíces del árbol",

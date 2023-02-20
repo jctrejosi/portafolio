@@ -1,11 +1,32 @@
-import { ReactElement } from "react";
+import { FormEvent, ReactElement } from "react";
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
+import emailjs from "emailjs-com";
+
+const sendEmail = (event: FormEvent) => {
+  event.preventDefault();
+
+  const obj = {
+    email: "james.das@asd",
+    phone: 314885435,
+    message: "mensaje del ads",
+  };
+  emailjs
+    .send("service_h1gs28d", "template_zcbiegi", obj, "Y7GRNBxNZJ9PjD9zd")
+    .then(
+      (response) => {
+        return response;
+      },
+      (err) => {
+        return err;
+      }
+    );
+};
 
 const ContactForm = (): ReactElement => {
   return (
     <div className="flex flex-row flex-wrap mb-12">
       <h4 className="w-full text-center">Envíame un mensaje:</h4>
-      <div className="w-full flex flex-wrap">
+      <form className="w-full flex flex-wrap" onSubmit={sendEmail}>
         <label
           className="text-light-color flex flex-col w-full md:w-1/2 font-custom p-4"
           htmlFor="phone"
@@ -30,7 +51,7 @@ const ContactForm = (): ReactElement => {
           Enviar
           <PaperAirplaneIcon />
         </button>
-      </div>
+      </form>
     </div>
   );
 };

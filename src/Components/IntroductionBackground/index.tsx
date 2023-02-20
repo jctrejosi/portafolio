@@ -9,6 +9,11 @@ interface props {
   textButton: string;
 }
 
+const scrollToJobs = () => {
+  const jobs = document.querySelector("#jobs");
+  jobs?.scrollIntoView({ behavior: "smooth" });
+};
+
 const IntroductionBackground = ({
   image,
   title,
@@ -17,7 +22,7 @@ const IntroductionBackground = ({
   textButton,
 }: props): ReactElement => {
   return (
-    <article
+    <section
       className="relative w-full h-screen overlay bg-local bg-cover"
       style={{ backgroundImage: `url(${image})` }}
     >
@@ -27,12 +32,12 @@ const IntroductionBackground = ({
           <span className="text-main-color">{name}</span>
         </h1>
         <h2 className="write">{subtitle}</h2>
-        <button type="submit" className="mt-8">
+        <button type="submit" className="mt-8" onClick={scrollToJobs}>
           {textButton}
           <ArrowLongRightIcon />
         </button>
       </div>
-    </article>
+    </section>
   );
 };
 
