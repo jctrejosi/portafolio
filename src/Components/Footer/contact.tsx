@@ -1,28 +1,42 @@
-import { FormEvent, ReactElement } from "react";
+import { FormEvent, ReactElement, useState } from "react";
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import emailjs from "emailjs-com";
-
-const sendEmail = (event: FormEvent) => {
-  event.preventDefault();
-
-  const obj = {
-    email: "james.das@asd",
-    phone: 314885435,
-    message: "mensaje del ads",
-  };
-  emailjs
-    .send("service_h1gs28d", "template_zcbiegi", obj, "Y7GRNBxNZJ9PjD9zd")
-    .then(
-      (response) => {
-        return response;
-      },
-      (err) => {
-        return err;
-      }
-    );
-};
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 const ContactForm = (): ReactElement => {
+  const [phoneState, setPhone] = useState("");
+  const [emailState, setEmail] = useState("");
+  const [messageState, setMessage] = useState("");
+
+  const emailChange = (event: FormEvent) => {
+    setEmail(event.target.value);
+  };
+
+  const messageChange = (event: FormEvent) => {
+    setMessage(event.target.value);
+  };
+
+  const sendEmail = (event: FormEvent) => {
+    event.preventDefault();
+
+    const obj = {
+      email: emailState,
+      phone: phoneState,
+      message: messageState,
+    };
+    emailjs
+      .send("service_h1gs28d", "template_zcbiegi", obj, "Y7GRNBxNZJ9PjD9zd")
+      .then(
+        (response) => {
+          return response;
+        },
+        (err) => {
+          return err;
+        }
+      );
+  };
+
   return (
     <div className="flex flex-row flex-wrap mb-12">
       <h4 className="w-full text-center">Envíame un mensaje:</h4>
@@ -32,20 +46,32 @@ const ContactForm = (): ReactElement => {
           htmlFor="phone"
         >
           <span className="border-b-[.1rem] pb-2 mb-6">Teléfono:</span>
-          <input type="tel" id="phone" placeholder="(+57)3148854358" />
+          <PhoneInput
+            defaultCountry="CO"
+            placeholder="3148854358"
+            value={phoneState}
+            onChange={setPhone}
+            id="phone"
+          />
+          <input hidden />
         </label>
         <label
           className="text-light-color flex flex-col w-full md:w-1/2 font-custom p-4"
           htmlFor="email"
         >
           <span className="border-b-[.1rem] pb-2 mb-6">Email:</span>
-          <input type="email" id="email" placeholder="jctrejoss@unal.edu.co" />
+          <input
+            type="email"
+            id="email"
+            placeholder="jctrejoss@unal.edu.co"
+            onChange={emailChange}
+          />
         </label>
         <label className="w-full flex flex-col p-4" htmlFor="message">
           <span className="border-b-[.1rem] pb-2 mb-6 text-light-color">
             Mensaje:
           </span>
-          <textarea id="message" cols={30} rows={4} />
+          <textarea id="message" cols={30} rows={4} onChange={messageChange} />
         </label>
         <button className="mx-auto my-8" type="submit">
           Enviar
