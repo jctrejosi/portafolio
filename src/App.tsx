@@ -1,6 +1,7 @@
 import IntroductionBackground from "./Components/IntroductionBackground";
 import JobsList from "./Components/JobsList";
 import SkillsGraphs from "./Components/SkillsGraphs";
+import FilesDownload from "./Components/FilesDownload";
 import WhatsappPopup from "./Components/WhatsappPopup";
 import GitPopup from "./Components/GitPopup";
 import Footer from "./Components/Footer";
@@ -11,6 +12,7 @@ import {
   jobs,
   gitPopups,
   footer,
+  filesDownload,
 } from "./Content/Home";
 
 const App = () => {
@@ -36,6 +38,7 @@ const App = () => {
         introduction={softSkills.introduction}
         generalSkills={softSkills.skillsGeneric}
       />
+      <FilesDownload files={filesDownload.files} title={filesDownload.title} />
       <WhatsappPopup />
       <GitPopup icons={gitPopups} />
       <Footer socialNets={footer.socialNets} phrase={footer.phrase} />

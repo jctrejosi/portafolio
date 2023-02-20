@@ -173,6 +173,27 @@ export const softSkills = {
   ],
 };
 
+export const filesDownload = {
+  title: "Documentos de interés",
+  files: [
+    {
+      file: gitlab,
+      icon: responsive,
+      text: "texto1",
+    },
+    {
+      file: gitlab,
+      icon: responsive,
+      text: "texto2",
+    },
+    {
+      file: gitlab,
+      icon: responsive,
+      text: "texto3",
+    },
+  ],
+};
+
 export const footer = {
   socialNets: [
     {

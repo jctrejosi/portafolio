@@ -15,11 +15,11 @@ const JobsList = ({ jobs }: props): ReactElement => {
     return (
       <li
         key={`job-${element.title}`}
-        className="group w-full sm:w-1/2 xl:w-1/4 relative overflow-hidden"
+        className="group w-full sm:w-1/2 md:w-1/3 xl:w-1/4 relative overflow-hidden max-h-[50vh]"
       >
         <img className="w-full object-cover" src={element.image} alt="" />
         <div className="absolute top-0 left-0 bg-glass-400 md:bg-glass-700 w-full h-full p-8 md:translate-y-full items-start justify-end flex flex-col group-hover:translate-y-0 transition-transform duration-300">
-          <h5 className="md:group-hover:bottom-auto md:bottom-[25rem] relative">
+          <h5 className="md:group-hover:top-auto md:group-hover:relative md:top-[-8rem] md:absolute">
             {element.title}
           </h5>
           <p className="text-light-color mt-4">Participación:</p>
@@ -52,7 +52,7 @@ const JobsList = ({ jobs }: props): ReactElement => {
 
   return (
     <section>
-      <ul className="flex flex-wrap">{jobsList}</ul>
+      <ul className="flex flex-wrap max-h-screen">{jobsList}</ul>
       <Modal item={jobFocus} show={isShowing} hide={toggle} />
     </section>
   );
