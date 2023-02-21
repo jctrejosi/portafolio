@@ -1,7 +1,19 @@
 import imageBg from "../assets/images/introductionBg.webp";
-import responsive from "../assets/images/responsive.webp";
 import github from "../assets/images/github.webp";
 import gitlab from "../assets/images/gitlab.webp";
+
+import responsive from "../assets/icons/responsive.svg";
+import git from "../assets/icons/git.svg";
+import design from "../assets/icons/design.svg";
+import creative from "../assets/icons/creative.svg";
+import retailer from "../assets/icons/retailer.svg";
+import adaptability from "../assets/icons/adaptability.svg";
+
+import githubfooter from "../assets/icons/github.svg";
+import gitlabfooter from "../assets/icons/gitlab.svg";
+import linkein from "../assets/icons/linkedin.svg";
+import facebook from "../assets/icons/facebook.svg";
+import instagram from "../assets/icons/instagram.svg";
 
 export const background = {
   image: imageBg,
@@ -63,12 +75,16 @@ export const technicalSkills = {
       label: "Vue.js",
     },
     {
-      value: 70,
+      value: 75,
       label: "React.js",
     },
     {
       value: 75,
       label: "ES6",
+    },
+    {
+      value: 70,
+      label: "Typescript",
     },
     {
       value: 85,
@@ -87,10 +103,6 @@ export const technicalSkills = {
       label: "Tailwind",
     },
     {
-      value: 80,
-      label: "Git",
-    },
-    {
       value: 60,
       label: "Docker",
     },
@@ -106,19 +118,19 @@ export const technicalSkills = {
   skillsGeneric: [
     {
       icon: responsive,
-      title: "Diseño responsivo1",
+      title: "Diseño responsivo",
       description:
         "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
     {
-      icon: responsive,
-      title: "Diseño responsivo2",
+      icon: design,
+      title: "Maquetación",
       description:
         "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
     {
-      icon: responsive,
-      title: "Diseño Responsivo3",
+      icon: git,
+      title: "Versionamiento",
       description:
         "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
@@ -156,19 +168,19 @@ export const softSkills = {
   ],
   skillsGeneric: [
     {
-      icon: responsive,
-      title: "title1",
+      icon: creative,
+      title: "Creativo",
       description: "",
     },
     {
-      icon: responsive,
-      title: "title2",
-      description: "description",
+      icon: retailer,
+      title: "Detallista",
+      description: "",
     },
     {
-      icon: responsive,
-      title: "title",
-      description: "description",
+      icon: adaptability,
+      title: "Adaptable",
+      description: "",
     },
   ],
 };
@@ -197,24 +209,24 @@ export const filesDownload = {
 export const footer = {
   socialNets: [
     {
-      icon: github,
-      url: "www.google.com",
+      icon: githubfooter,
+      url: "https://github.com/jctrejosi",
     },
     {
-      icon: github,
-      url: "ww.asd",
+      icon: gitlabfooter,
+      url: "https://git.roiback.com/juan.trejos",
     },
     {
-      icon: github,
-      url: "ww.adf2",
+      icon: linkein,
+      url: "https://www.linkedin.com/in/juan-carlos-trejos-26605b142",
     },
     {
-      icon: github,
-      url: "ww.fas23",
+      icon: facebook,
+      url: "https://www.facebook.com/juanktrejos",
     },
     {
-      icon: github,
-      url: "ww.fasdw2",
+      icon: instagram,
+      url: "https://www.instagram.com/juanktrejos",
     },
   ],
   phrase: "Entre más sopla el viento más firmes son las raíces del árbol",

@@ -11,7 +11,9 @@ const SocialNets = ({ socialNets }: props): ReactElement => {
       <li key={`social-neet-footer-${element.url}`}>
         <a
           href={element.url}
+          target="_blank"
           className="flex justify-center items-center mx-4 rounded-full border-light-color p-3 border-2 hover:bg-extra-color transition-colors duration-300"
+          rel="noreferrer"
         >
           <img src={element.icon} alt="social-net" className="w-8 h-8" />
         </a>
