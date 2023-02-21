@@ -33,7 +33,7 @@
     border-color: transparent;
   }
   to {
-    border-color: var(--light-color);
+    border-color: $light-color;
   }
 }
 
@@ -50,5 +50,33 @@
 
   &:nth-child(2) {
     animation: writeDelay 4s steps(28, end), tip 1s infinite 2s;
+  }
+}
+
+.loader {
+  border-top-color: $main-color;
+  animation: spinner 1s linear infinite;
+}
+
+.checkin {
+  animation: spinner 1s linear;
+  border-top-color: $custom-color;
+  background-image: url("../assets/images/checkin.webp");
+  background-size: cover;
+}
+
+.checkout {
+  animation: spinner 1s linear;
+  border-top-color: $custom-color;
+  background-image: url("../assets/images/checkout.webp");
+  background-size: cover;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

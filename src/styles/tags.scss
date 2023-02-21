@@ -217,6 +217,12 @@ h6 {
   &::first-letter {
     text-transform: uppercase;
   }
+
+  svg {
+    margin-left: .2rem;
+    height: 2rem;
+    width: 2rem;
+  }
 }
 
 p {
