@@ -24,14 +24,14 @@ const modal = ({ item, show, hide }: props): ReactElement | null => {
         aria-hidden="true"
         onClick={hide}
       />
-      <div className="w-[90%] md:w-[60rem] relative h-[95%] overflow-auto rounded-sm z-10 bg-primary">
+      <div className="w-[90%] md:w-[60rem] relative h-[95%] overflow-auto rounded-md z-10 bg-primary">
         <iframe
           className="w-full h-[40rem]"
           src={item.url}
           frameBorder="0"
           title={item.title}
         />
-        <div className="bg-light-color p-4">
+        <div className="bg-light-color px-12 py-8">
           <h4 className="text-custom-color">{item.title}</h4>
           <p className="my-4">Escrito en {item.language}.</p>
           <p className="mb-4">{item.description}.</p>

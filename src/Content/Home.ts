@@ -271,7 +271,7 @@ export const softSkills = {
     },
     {
       value: 90,
-      label: "Adaptabilidad",
+      label: "Flexibilidad",
     },
   ],
   skillsGeneric: [
