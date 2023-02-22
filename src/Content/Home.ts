@@ -326,5 +326,5 @@ export const footer = {
       url: "https://www.instagram.com/juanktrejos",
     },
   ],
-  phrase: "Entre más sopla el viento más firmes son las raíces del árbol",
+  phrase: "Entre más sopla el viento más fuertes son las raíces del árbol",
 };

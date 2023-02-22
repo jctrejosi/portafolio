@@ -24,7 +24,9 @@ const skillsIcon = ({ generalSkills }: props): ReactElement => {
     );
   });
 
-  return <ul className="flex justify-between md:my-4">{genericSkills}</ul>;
+  return (
+    <ul className="flex justify-between md:my-4 pb-10">{genericSkills}</ul>
+  );
 };
 
 export default skillsIcon;
