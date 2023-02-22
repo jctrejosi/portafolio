@@ -28,6 +28,11 @@ import spiwak from "../assets/images/jobs/spiwak.webp";
 import lalocadelosgatos from "../assets/images/jobs/lalocadelosgatos.webp";
 import recetasaranda from "../assets/images/jobs/recetasaranda.webp";
 
+import csv from "../assets/icons/csv.svg";
+import coverLetter from "../assets/icons/cover_letter.svg";
+import coverLetterDoc from "../assets/docs/cover_letter.pdf";
+import csvDoc from "../assets/docs/csv.pdf";
+
 export const background = {
   image: imageBg,
   title: "Hola, mi nombre es",
@@ -292,19 +297,14 @@ export const filesDownload = {
   title: "Documentos de interés",
   files: [
     {
-      file: gitlab,
-      icon: responsive,
-      text: "texto1",
+      file: csvDoc,
+      icon: csv,
+      text: "Hoja de vida",
     },
     {
-      file: gitlab,
-      icon: responsive,
-      text: "texto2",
-    },
-    {
-      file: gitlab,
-      icon: responsive,
-      text: "texto3",
+      file: coverLetterDoc,
+      icon: coverLetter,
+      text: "Carta de presentación",
     },
   ],
 };
