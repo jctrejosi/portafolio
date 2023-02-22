@@ -41,18 +41,43 @@ export const background = {
   textButton: "Conoce mi trabajo",
 };
 
-export const gitPopups = [
-  {
-    text: "jctrejosi",
-    url: "https://github.com/jctrejosi",
-    icon: github,
-  },
-  {
-    text: "juan.trejos",
-    url: "https://git.roiback.com/juan.trejos",
-    icon: gitlab,
-  },
-];
+export const header = {
+  navbar: [
+    {
+      text: "Mi trabajo",
+      id: "#jobs",
+    },
+    {
+      text: "Habilidades técnicas",
+      id: "#technicalSkills",
+    },
+    {
+      text: "Habilidades blandas",
+      id: "#softSkills",
+    },
+    {
+      text: "Archivos",
+      id: "#files",
+    },
+    {
+      text: "Contacto",
+      id: "#contact",
+    },
+  ],
+
+  gitPopups: [
+    {
+      text: "jctrejosi",
+      url: "https://github.com/jctrejosi",
+      icon: github,
+    },
+    {
+      text: "juan.trejos",
+      url: "https://git.roiback.com/juan.trejos",
+      icon: gitlab,
+    },
+  ],
+};
 
 export const jobs = [
   {

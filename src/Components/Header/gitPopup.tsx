@@ -1,5 +1,5 @@
 import { ReactElement, useState } from "react";
-import type { social } from "../../types/GitPopup";
+import type { social } from "../../types/Header";
 
 interface props {
   icons: social[];
@@ -25,14 +25,14 @@ const GitPopup = ({ icons }: props): ReactElement => {
   });
   return (
     <div
-      className={`fixed top-8 right-8 flex bg-glass-700 px-4 py-2 rounded-md ${
+      className={`flex fixed top-0 right-0 md:relative bg-glass-700 px-4 py-2 rounded-md max-h-[4rem] md:max-h-full ${
         close ? "hidden" : "visible"
       }`}
     >
       {list}
       <button
         type="button"
-        className="btn-close-sm absolute -left-4 -top-3"
+        className="btn-close-sm absolute -left-4 top-10"
         onClick={() => closePopup(true)}
       >
         x

@@ -3,3 +3,8 @@ export interface social {
   icon: string;
   url: string;
 }
+
+export interface itemNavbar {
+  text: string;
+  id: string;
+}

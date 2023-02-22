@@ -8,6 +8,7 @@ interface props {
   generalSkills: generalSkill[];
   title: string;
   introduction: string;
+  id: string;
 }
 
 const SkillsGraphs = ({
@@ -15,10 +16,14 @@ const SkillsGraphs = ({
   title,
   introduction,
   generalSkills,
+  id,
 }: props): ReactElement => {
   return (
-    <section className="bg-primary flex justify-start pt-12 items-center flex-col relative">
-      <div className="block w-[90%] max-w-[62rem] pt-60">
+    <section
+      id={id}
+      className="bg-primary flex justify-start pb-60 pt-12 items-center flex-col relative"
+    >
+      <div className="block w-[90%] max-w-[62rem]">
         <h1 className="text-custom-color text-center">{title}</h1>
         <p className="text-center">{introduction}</p>
         <SkillsIcon generalSkills={generalSkills} />

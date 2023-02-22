@@ -6,11 +6,15 @@ import type { socialNet } from "../../types/Footer";
 interface props {
   socialNets: socialNet[];
   phrase: string;
+  id: string;
 }
 
-const Footer = ({ phrase, socialNets }: props): ReactElement => {
+const Footer = ({ phrase, socialNets, id }: props): ReactElement => {
   return (
-    <section className="bg-gradient-to-t from-blue-color to-custom-color py-8 min-h-screen flex items-center justify-center flex-col">
+    <section
+      id={id}
+      className="bg-gradient-to-t from-blue-color to-custom-color py-8 min-h-screen flex items-center justify-center flex-col"
+    >
       <div className="max-w-[62rem] w-[90%]">
         <Contact />
         <SocialNets socialNets={socialNets} />

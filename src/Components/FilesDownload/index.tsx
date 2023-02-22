@@ -5,9 +5,10 @@ import type { file } from "../../types/FilesDownloads";
 interface props {
   title: string;
   files: file[];
+  id: string;
 }
 
-const FilesDownload = ({ files, title }: props): ReactElement => {
+const FilesDownload = ({ files, title, id }: props): ReactElement => {
   const items = files.map((element) => {
     return (
       <li key={element.text}>
@@ -25,7 +26,10 @@ const FilesDownload = ({ files, title }: props): ReactElement => {
   });
 
   return (
-    <section className="bg-primary flex justify-center items-center flex-col py-60">
+    <section
+      id={id}
+      className="bg-primary flex justify-center items-center flex-col pb-60 pt-12"
+    >
       <h1 className="text-custom-color mb-14 text-center">{title}</h1>
       <ul className="flex md:max-w-[64rem] flex-wrap justify-around">
         {items}

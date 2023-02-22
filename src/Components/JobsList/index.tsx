@@ -5,9 +5,10 @@ import type { job } from "../../types/jobsComponent";
 
 interface props {
   jobs: job[];
+  id: string;
 }
 
-const JobsList = ({ jobs }: props): ReactElement => {
+const JobsList = ({ jobs, id }: props): ReactElement => {
   const [jobFocus, setJob] = useState({} as job);
   const { isShowing, toggle } = useModal();
 
@@ -60,8 +61,8 @@ const JobsList = ({ jobs }: props): ReactElement => {
   });
 
   return (
-    <section id="jobs">
-      <ul className="flex flex-wrap bg-primary">{jobsList}</ul>
+    <section id={id}>
+      <ul className="flex flex-wrap bg-primary pb-60">{jobsList}</ul>
       <Modal item={jobFocus} show={isShowing} hide={toggle} />
     </section>
   );

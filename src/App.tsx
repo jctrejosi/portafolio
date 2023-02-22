@@ -3,14 +3,14 @@ import JobsList from "./Components/JobsList";
 import SkillsGraphs from "./Components/SkillsGraphs";
 import FilesDownload from "./Components/FilesDownload";
 import WhatsappPopup from "./Components/WhatsappPopup";
-import GitPopup from "./Components/GitPopup";
 import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 import {
   background,
   technicalSkills,
   softSkills,
   jobs,
-  gitPopups,
+  header,
   footer,
   filesDownload,
 } from "./Content/Home";
@@ -18,6 +18,7 @@ import {
 const App = () => {
   return (
     <div id="app">
+      <Header git={header.gitPopups} navbar={header.navbar} />
       <IntroductionBackground
         image={background.image}
         title={background.title}
@@ -25,23 +26,32 @@ const App = () => {
         subtitle={background.subtitle}
         textButton={background.textButton}
       />
-      <JobsList jobs={jobs} />
+      <JobsList jobs={jobs} id="jobs" />
       <SkillsGraphs
         skills={technicalSkills.skills}
         title={technicalSkills.title}
         introduction={technicalSkills.introduction}
         generalSkills={technicalSkills.skillsGeneric}
+        id="technicalSkills"
       />
       <SkillsGraphs
         skills={softSkills.skills}
         title={softSkills.title}
         introduction={softSkills.introduction}
         generalSkills={softSkills.skillsGeneric}
+        id="softSkills"
       />
-      <FilesDownload files={filesDownload.files} title={filesDownload.title} />
+      <FilesDownload
+        files={filesDownload.files}
+        title={filesDownload.title}
+        id="files"
+      />
       <WhatsappPopup />
-      <GitPopup icons={gitPopups} />
-      <Footer socialNets={footer.socialNets} phrase={footer.phrase} />
+      <Footer
+        socialNets={footer.socialNets}
+        phrase={footer.phrase}
+        id="contact"
+      />
     </div>
   );
 };

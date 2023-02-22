@@ -28,6 +28,7 @@ module.exports = {
 
       primary: "#e6eef1",
       secondary: "#f2f2f2",
+      transparent: "rgba(0, 0, 0, 0)",
       "glass-100": "rgba(0, 0, 25, 0.1)",
       "glass-200": "rgba(0, 0, 25, 0.2)",
       "glass-300": "rgba(0, 0, 25, 0.3)",

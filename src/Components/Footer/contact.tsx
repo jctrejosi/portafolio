@@ -93,7 +93,7 @@ const ContactForm = (): ReactElement => {
             id="email"
             placeholder="jctrejoss@unal.edu.co"
             value={emailState}
-            onChange={() => emailChange}
+            onChange={emailChange}
           />
         </label>
         <label className="w-full flex flex-col p-4" htmlFor="message">

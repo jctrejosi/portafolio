@@ -53,3 +53,10 @@ button.btn-close-sm {
     color: $extra-color;
   }
 }
+
+button[type="button"],
+.btn-hidden {
+  @include breakpoint (md) {
+    display: none;
+  }
+}
