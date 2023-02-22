@@ -225,14 +225,17 @@ export const technicalSkills = {
     {
       icon: responsive,
       title: "Diseño responsivo",
+      description: "",
     },
     {
       icon: design,
       title: "Maquetación",
+      description: "",
     },
     {
       icon: git,
       title: "Versionamiento",
+      description: "",
     },
   ],
 };
@@ -270,14 +273,17 @@ export const softSkills = {
     {
       icon: creative,
       title: "Creativo",
+      description: "",
     },
     {
       icon: retailer,
       title: "Detallista",
+      description: "",
     },
     {
       icon: adaptability,
       title: "Adaptable",
+      description: "",
     },
   ],
 };
