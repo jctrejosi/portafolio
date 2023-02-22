@@ -24,6 +24,7 @@ import fairplay from "../assets/images/jobs/fairplay.webp";
 import carema from "../assets/images/jobs/carema.webp";
 import bhmallorca from "../assets/images/jobs/bhmallorca.webp";
 import spacehotels from "../assets/images/jobs/spacehotels.webp";
+import spiwak from "../assets/images/jobs/spiwak.webp";
 import lalocadelosgatos from "../assets/images/jobs/lalocadelosgatos.webp";
 import recetasaranda from "../assets/images/jobs/recetasaranda.webp";
 
@@ -138,6 +139,16 @@ export const jobs = [
       "Web corporativa de hoteles. En este proyecto me ecargué de maquetar algunos módulos solicitados por el cliente, y la revision y maquetación de la versión responsive",
     technologies: ["Javascript", "Sass", "Django Templates"],
     participation: 30,
+  },
+  {
+    title: "Spiwak",
+    image: spiwak,
+    language: "Vanilla js",
+    url: "https://hotelesspiwak.develop.pre.roibacktest.com/es/",
+    description:
+      "Este es un proyecto donde sólo se requiere la integración del motor de reservas, un footer y un header, es un proyecto sencillo, aún está en desarrollo (Ya que hace falta contenido por parte del cliente). Pt: para entrar a esta web se requiere de un login ya que está en el servidor de desarrollo, usuario: demo - contraseña : demo001133",
+    technologies: ["Javascript", "Sass", "Django Templates"],
+    participation: 100,
   },
   {
     title: "La loca de los gatos",
