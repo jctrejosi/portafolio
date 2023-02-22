@@ -15,6 +15,18 @@ import linkein from "../assets/icons/linkedin.svg";
 import facebook from "../assets/icons/facebook.svg";
 import instagram from "../assets/icons/instagram.svg";
 
+import geoportal from "../assets/images/jobs/geoportal.webp";
+import bqhoteles from "../assets/images/jobs/bqhoteles.webp";
+import mynd from "../assets/images/jobs/mynd.webp";
+import shambhala from "../assets/images/jobs/shambhala.webp";
+import ciutatbarcelona from "../assets/images/jobs/ciutatbarcelona.webp";
+import fairplay from "../assets/images/jobs/fairplay.webp";
+import carema from "../assets/images/jobs/carema.webp";
+import bhmallorca from "../assets/images/jobs/bhmallorca.webp";
+import spacehotels from "../assets/images/jobs/spacehotels.webp";
+import lalocadelosgatos from "../assets/images/jobs/lalocadelosgatos.webp";
+import recetasaranda from "../assets/images/jobs/recetasaranda.webp";
+
 export const background = {
   image: imageBg,
   title: "Hola, mi nombre es",
@@ -38,31 +50,114 @@ export const gitPopups = [
 
 export const jobs = [
   {
-    title: "title1",
-    image: "https://dummyimage.com/350x350/695369/fff",
-    language: "language",
-    url: "www.google.com",
-    description: "description asdadf asdfasfadsf dasfasdfdasf",
-    technologies: ["js", "vue", "otra"],
-    participation: 80,
-  },
-  {
-    title: "title2",
-    image: "https://dummyimage.com/350x350/696969/fff",
-    language: "language",
-    url: "www.google.com",
-    description: "description asdadf asdfasfadsf dasfasdfdasf",
-    technologies: ["js", "vue", "otra"],
+    title: "Geoportal SIMAC",
+    image: geoportal,
+    language: "Vue.js",
+    url: "https://cdiac.manizales.unal.edu.co/geoportal-simac",
+    description:
+      "Construí esta web para la Universidad Nacional de Colombia, en ella se muestran distintas estaciones climatológicas ubicadas en el departamento de Caldas, las cuales despliegan gráficas de sus datos. Fue mi primer proyecto que salió a producción, para lograrlo aprendí varias tecnologías, entre ellas Laravel para realizar unas cuantas APIs, como la comunicación en tiempo real de los datos de las estaciones, Docker para el despliegue de su respectivo contenedor, SQL en Postgresql ya que hubo una reestructuración de la bodega de datos y trabajar en sistemas operativos Linux tanto para dar soporte a la configuración en el servidor de pruebas como para el desarrollo",
+    technologies: ["Vue.js", "Sass", "Bootstrap", "Montado en Docker"],
     participation: 100,
   },
   {
-    title: "title3",
-    image: "https://dummyimage.com/350x350/535353/fff",
-    language: "language",
-    url: "www.google.com",
-    description: "description asdadf asdfasfadsf dasfasdfdasf",
-    technologies: ["js", "vue", "otra"],
-    participation: 40,
+    title: "Bq Hoteles",
+    image: bqhoteles,
+    language: "Vanilla js",
+    url: "https://www.bqhoteles.com/es/",
+    description:
+      "Web corporativa de esta cadena de hoteles, maqueté todo el sitio, incluyendo sus subdominios. Fue mi primer proyecto empresarial, los componentes que se encuentran en este sitio son rehusables ya que es el marco de trabajo de la empresa, todo componente nuevo debe ser rehusable para cualquier proyecto, en este proyecto empecé con algo nuevo que es tener un diseñador gráfico de la mano y seguir el diseño propuesto por este al pie de la letra, un diseño que se provee por medio de sketch",
+    technologies: ["Javascript", "Jquery", "Sass", "Django templates"],
+    participation: 90,
+  },
+  {
+    title: "Mynd Hoteles",
+    image: mynd,
+    language: "Vanilla js",
+    url: "https://www.myndhotels.com/es/",
+    description:
+      "Web corporativa de esta cadena de hoteles, incluyendo sus subdominios. Algunas de las animaciones en este proyecto fueron nuevas para mi, por ejemplo las olas que se ven en el background, también el módulo de imagenes que se traen dinámicamente desde sus redes sociales con el uso de tokens",
+    technologies: ["Javascript", "Jquery", "Sass", "Django templates"],
+    participation: 70,
+  },
+  {
+    title: "Shambhala",
+    image: shambhala,
+    language: "Vanilla js",
+    url: "https://shambhala.backhotelengine.com/es/",
+    description:
+      "Web corporativa de esta cadena de hoteles, incluyendo sus subdominios. De este proyecto aprendí algo nuevo que es la integración de directivas de cookies desde la plataforma cookie-script.com, como configurarlas y su uso con google analytics",
+    technologies: ["Javascript", "Jquery", "Sass", "Django templates"],
+    participation: 85,
+  },
+  {
+    title: "Ciutatbarcelona",
+    image: ciutatbarcelona,
+    language: "Vanilla js",
+    url: "https://www.ciutatbarcelona.com/",
+    description:
+      "Web corporativa de esta cadena de hoteles, incluyendo sus subdominios. En este proyecto apliqué algunas transiciones nuevas, pero en general se parece bastante a Mynd-hotels",
+    technologies: ["Javascript", "Jquery", "Sass", "Django templates"],
+    participation: 90,
+  },
+  {
+    title: "Fairplay",
+    image: fairplay,
+    language: "Vanilla js",
+    url: "https://www.ciutatbarcelona.com/",
+    description:
+      "Web corporativa de esta cadena de hoteles, incluyendo sus subdominios. En este proyecto sólo me encargué de la versión responsive",
+    technologies: ["Javascript", "Sass"],
+    participation: 30,
+  },
+  {
+    title: "Carema",
+    image: carema,
+    language: "Vanilla js",
+    url: "https://www.caremahotels.com/es/",
+    description:
+      "Web corporativa de esta cadena de hoteles. En este proyecto me encargué de cambiar algunos módulos solicitados por el cliente, como el carousel con vídeo del background, el módulo de hoteles, la integración del motor de reservas, maquetación de páginas de ofertas y página de paquetes y la revisión y maquetación de la versión responsive",
+    technologies: ["Javascript", "Sass", "Django Templates"],
+    participation: 45,
+  },
+  {
+    title: "Bhmallorca",
+    image: bhmallorca,
+    language: "Vanilla js",
+    url: "https://bookings.bhmallorca.com/",
+    description:
+      "En esta web sólo se integró el motor de reservas. En este proyecto sólo se usan tres módulos, el header, el footer y el motor de reservas, es un proyecto sencillo, también algo nuevo que se realizó fue la activación de una versión mobile donde al abrirse en un dispositivo con resolución menor a 569px se cambian los módulos para una mejor legibilidad de la web, además de la versión responsive que debe quedar funcionando en caso de fallar el cambio de módulos",
+    technologies: ["Javascript", "Sass", "Django Templates"],
+    participation: 100,
+  },
+  {
+    title: "Spacehotels",
+    image: spacehotels,
+    language: "Vanilla js",
+    url: "https://www.spacehotels.it/it/",
+    description:
+      "Web corporativa de hoteles. En este proyecto me ecargué de maquetar algunos módulos solicitados por el cliente, y la revision y maquetación de la versión responsive",
+    technologies: ["Javascript", "Sass", "Django Templates"],
+    participation: 30,
+  },
+  {
+    title: "La loca de los gatos",
+    image: lalocadelosgatos,
+    language: "React.js",
+    url: "http://lalocadelosgatosreac-20221122085403-hostingbucket-dev.s3-website-us-east-1.amazonaws.com/",
+    description:
+      "Es una web que está en desarrollo, es para una fundación de mascotas, es un proyecto personal, tanto el diseño como el backend y frontend del proyecto es hecho por mi, está montado en Amazon web services y lo considero como un proceso de aprendizaje camino al full-stack, estoy aplicando metodología enfocada en el SEO y la accesibilidad web",
+    technologies: ["React.js", "Sass", "Tailwind", "Node.js", "Mongodb"],
+    participation: 100,
+  },
+  {
+    title: "Recetas aranda",
+    image: recetasaranda,
+    language: "React.js",
+    url: "http://recetasrandaeact-20230117215512-hostingbucket-dev.s3-website-us-east-1.amazonaws.com/",
+    description:
+      "Esta es una prueba técnica realizada a partir de la siguiente maqueta: https://xd.adobe.com/view/60cc30f3-d2eb-4c65-831f-76a81ad1722a-359f/ donde se evalúa el conocimiento en react.js con sass y el manejo de la store, apuntando a una API prediseñada para la prueba",
+    technologies: ["React.js", "Sass"],
+    participation: 100,
   },
 ];
 
@@ -119,20 +214,14 @@ export const technicalSkills = {
     {
       icon: responsive,
       title: "Diseño responsivo",
-      description:
-        "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
     {
       icon: design,
       title: "Maquetación",
-      description:
-        "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
     {
       icon: git,
       title: "Versionamiento",
-      description:
-        "description asdasd asdfasfasdf asdfasdfasd fasdfasdfa adasdasd",
     },
   ],
 };
@@ -170,17 +259,14 @@ export const softSkills = {
     {
       icon: creative,
       title: "Creativo",
-      description: "",
     },
     {
       icon: retailer,
       title: "Detallista",
-      description: "",
     },
     {
       icon: adaptability,
       title: "Adaptable",
-      description: "",
     },
   ],
 };

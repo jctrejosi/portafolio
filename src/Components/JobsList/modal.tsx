@@ -24,25 +24,26 @@ const modal = ({ item, show, hide }: props): ReactElement | null => {
         aria-hidden="true"
         onClick={hide}
       />
-      <div className="w-[90%] md:w-[62rem] relative h-[90%] overflow-auto rounded-sm z-10">
-        <img
-          className="w-full h-[30rem] object-cover"
-          src={item.image}
-          alt="job-modal"
+      <div className="w-[90%] md:w-[60rem] relative h-[95%] overflow-auto rounded-sm z-10 bg-primary">
+        <iframe
+          className="w-full h-[40rem]"
+          src={item.url}
+          frameBorder="0"
+          title={item.title}
         />
         <div className="bg-light-color p-4">
-          <h6 className="text-custom-color">{item.title}</h6>
-          <p>{item.description}</p>
-          <p>Escrito en {item.language}</p>
+          <h4 className="text-custom-color">{item.title}</h4>
+          <p className="my-4">Escrito en {item.language}.</p>
+          <p className="mb-4">{item.description}.</p>
           <p>Tecnologías:</p>
-          <ul className="pl-12">{technologiesList}</ul>
-          <a href={item.url} className="my-2">
+          <ul className="pl-12 mb-4">{technologiesList}</ul>
+          <a href={item.url} className="my-2" target="_blank" rel="noreferrer">
             Ir a la web{" "}
             <ArrowUpRightIcon className="border-l border-b pl-1 pb-1 rounded-sm" />
           </a>
           <p>Participación:</p>
           <div
-            className="rounded-full flex items-center h-8 mt-2 flex-1 w-full bg-main-color"
+            className="rounded-full flex items-center h-10 mt-2 flex-1 w-full bg-main-color"
             id="skill"
           >
             <div

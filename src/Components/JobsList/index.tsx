@@ -15,13 +15,17 @@ const JobsList = ({ jobs }: props): ReactElement => {
     return (
       <li
         key={`job-${element.title}`}
-        className="group w-full sm:w-1/2 md:w-1/3 xl:w-1/4 relative overflow-hidden max-h-[50vh]"
+        className="group w-full sm:w-1/2 md:w-1/3 xl:w-1/4 relative overflow-hidden h-[50vh] md:border-x-2 border-y-2 border-glass-400"
       >
-        <img className="w-full object-cover" src={element.image} alt="" />
+        <img
+          className="w-full object-cover brightness-50 h-full"
+          src={element.image}
+          alt=""
+        />
         <div className="absolute top-0 left-0 bg-glass-400 md:bg-glass-700 w-full h-full p-8 md:translate-y-full items-start justify-end flex flex-col group-hover:translate-y-0 transition-transform duration-300">
-          <h5 className="md:group-hover:top-auto md:group-hover:relative md:top-[-8rem] md:absolute">
+          <h4 className="md:group-hover:top-auto md:group-hover:relative md:top-[-8rem] md:absolute">
             {element.title}
-          </h5>
+          </h4>
           <p className="text-light-color mt-4">Participación:</p>
           <div
             className="rounded-full flex items-center max-h-8 mt-2 flex-1 w-full bg-main-color"
@@ -52,7 +56,7 @@ const JobsList = ({ jobs }: props): ReactElement => {
 
   return (
     <section id="jobs">
-      <ul className="flex flex-wrap max-h-screen">{jobsList}</ul>
+      <ul className="flex flex-wrap bg-primary">{jobsList}</ul>
       <Modal item={jobFocus} show={isShowing} hide={toggle} />
     </section>
   );

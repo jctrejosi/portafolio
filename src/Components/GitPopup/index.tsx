@@ -17,7 +17,7 @@ const GitPopup = ({ icons }: props): ReactElement => {
         rel="noreferrer"
       >
         <img className="w-9 h-9 mr-1" src={element.icon} alt="git" />
-        <p className="text-main-color group-hover:text-extra-color first-letter:normal-case duration-300">
+        <p className="text-main-color group-hover:text-extra-color normal-case first-letter:normal-case duration-300">
           {element.text}
         </p>
       </a>

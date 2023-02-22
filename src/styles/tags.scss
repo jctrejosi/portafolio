@@ -231,7 +231,7 @@ p {
   font-size: $p-size;
   line-height: $p-height;
   text-align: $p-align;
-  text-transform: lowercase;
+  text-transform: inherit;
 
   &::first-letter {
     text-transform: uppercase;
