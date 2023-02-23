@@ -30,8 +30,10 @@ import recetasaranda from "../assets/images/jobs/recetasaranda.webp";
 
 import csv from "../assets/icons/csv.svg";
 import coverLetter from "../assets/icons/cover_letter.svg";
+import certificates from "../assets/icons/certificates.svg";
 import coverLetterDoc from "../assets/docs/cover_letter.pdf";
 import csvDoc from "../assets/docs/csv.pdf";
+import certificadoRoiback from "../assets/docs/certificado_roiback.pdf";
 
 export const background = {
   image: imageBg,
@@ -330,6 +332,11 @@ export const filesDownload = {
       file: coverLetterDoc,
       icon: coverLetter,
       text: "Carta de presentación",
+    },
+    {
+      file: certificadoRoiback,
+      icon: certificates,
+      text: "Certificado laboral Roiback",
     },
   ],
 };
