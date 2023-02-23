@@ -8,6 +8,11 @@ interface props {
   navbar: itemNavbar[];
 }
 
+const scrollToJobs = (id: string) => {
+  const jobs = document.querySelector(id);
+  jobs?.scrollIntoView({ behavior: "smooth" });
+};
+
 const Header = ({ git, navbar }: props): ReactElement => {
   const [dropdown, dropdownNavbar] = useState(false);
   const list = navbar.map((element) => {
@@ -16,9 +21,13 @@ const Header = ({ git, navbar }: props): ReactElement => {
         key={element.id}
         className="border-x-[.05rem] border-glass-300 py-3 md:first:pl-8 md:last:pr-8"
       >
-        <a className="normal-case mx-6" href={element.id}>
+        <button
+          className="mx-5 btn-link"
+          type="button"
+          onClick={() => scrollToJobs(element.id)}
+        >
           {element.text}
-        </a>
+        </button>
       </li>
     );
   });

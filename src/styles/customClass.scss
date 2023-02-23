@@ -54,9 +54,30 @@ button.btn-close-sm {
   }
 }
 
-button[type="button"],
-.btn-hidden {
+button[type="button"].btn-hidden {
   @include breakpoint (md) {
     display: none;
+  }
+}
+
+button.btn-link {
+  align-items: center;
+  color: $main-color;
+  border: 0;
+  display: flex;
+  font-weight: 500;
+  font: 1.4rem $main-font;
+  text-decoration: underline;
+  text-transform: inherit;
+  transition: color 0.3s;
+  white-space: nowrap;
+
+  &:hover {
+    color: $extra-color;
+  }
+
+  svg {
+    margin-left: 0.3rem;
+    width: 1.2rem;
   }
 }
