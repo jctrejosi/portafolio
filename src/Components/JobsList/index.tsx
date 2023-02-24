@@ -21,7 +21,7 @@ const JobsList = ({ jobs, id }: props): ReactElement => {
           setJob(element);
           toggle();
         }}
-        className="cursor-pointer group w-full sm:w-1/2 md:w-1/3 xl:w-1/4 relative overflow-hidden h-[50vh] md:border-x-2 border-y-2 border-glass-400"
+        className="cursor-pointer group w-full sm:w-1/2 md:w-1/3 xl:w-1/4 relative overflow-hidden h-[50vh]"
       >
         <img
           className="w-full object-cover brightness-50 h-full"

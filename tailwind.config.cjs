@@ -18,7 +18,7 @@ module.exports = {
 
       // ------------- Base Colors ---------------
 
-      "main-color": "#06d6a0",
+      "main-color": "#04cb97",
       "custom-color": "#118ab2",
       "extra-color": "#ef476f",
 
@@ -26,7 +26,7 @@ module.exports = {
 
       // -------- base backgrounds colors --------
 
-      primary: "#e6eef1",
+      primary: "#fff",
       secondary: "#f2f2f2",
       transparent: "rgba(0, 0, 0, 0)",
       "glass-100": "rgba(0, 0, 25, 0.1)",

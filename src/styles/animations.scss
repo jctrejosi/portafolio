@@ -3,28 +3,7 @@
     width: 0;
   }
   100% {
-    width: 30ch;
-  }
-}
-
-@keyframes writeResponsive {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 18ch;
-  }
-}
-
-@keyframes writeDelay {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 0;
-  }
-  100% {
-    width: 28ch;
+    width: 26ch;
   }
 }
 
@@ -38,19 +17,12 @@
 }
 
 .write {
-  animation: writeResponsive 2s steps(18, end), tip 1s;
+  animation: write 2s steps(26, end), tip 1s infinite;
   border-right: 0.2rem solid transparent;
   display: flex;
   overflow: hidden;
+  padding-right: 1rem;
   white-space: nowrap;
-
-  @media (min-width: 769px) {
-    animation: write 2s steps(30, end), tip 1s;
-  }
-
-  &:nth-child(2) {
-    animation: writeDelay 4s steps(28, end), tip 1s infinite 2s;
-  }
 }
 
 .loader {

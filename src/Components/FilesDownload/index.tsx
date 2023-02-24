@@ -12,7 +12,7 @@ const FilesDownload = ({ files, title, id }: props): ReactElement => {
   const items = files.map((element) => {
     return (
       <li key={element.text}>
-        <a className="mx-10 my-5" href={element.file} download>
+        <a className="my-5" href={element.file} download>
           <img
             className="w-10 h-10 mr-4"
             src={element.icon}
@@ -28,12 +28,10 @@ const FilesDownload = ({ files, title, id }: props): ReactElement => {
   return (
     <section
       id={id}
-      className="bg-primary flex justify-center items-center flex-col pb-60 pt-12"
+      className="bg-primary flex justify-center items-center flex-col pb-60 pt-12 max-w-[90%] md:max-w-[62rem] mx-auto"
     >
-      <h1 className="text-custom-color mb-14 text-center">{title}</h1>
-      <ul className="flex md:max-w-[64rem] flex-wrap justify-around">
-        {items}
-      </ul>
+      <h1 className="text-custom-color mb-14 w-full">{title}</h1>
+      <ul className="flex flex-col items-start w-full">{items}</ul>
     </section>
   );
 };
