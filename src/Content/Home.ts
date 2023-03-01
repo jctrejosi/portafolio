@@ -46,12 +46,16 @@ export const background = {
 export const header = {
   navbar: [
     {
-      text: "Mi trabajo",
-      id: "#jobs",
+      text: "Mis proyectos",
+      id: "#projects",
     },
     {
       text: "Sobre mí",
       id: "#aboutMe",
+    },
+    {
+      text: "Compañías",
+      id: "#jobs",
     },
     {
       text: "Habilidades técnicas",
@@ -376,4 +380,40 @@ export const aboutMe = {
   paragraph: `Soy un programador con experiencia en frameworks del Front-End y llevo alrededor de 3 años en esta área.
   Soy una persona curiosa, no me da pena preguntar ni equivocarme, me gusta estar atento a mis compañeros con más experiencia sobre cómo realizan su trabajo, reviso lo que hacen para así aprender de ellos, además también me gusta compartir mi conocimiento, me considero buen escucha y se me da bien la enseñanza.
   Mis metas más actuales son alcanzar el cargo de desarrollador FullStack, y de allí desarrollarme profesionalmente hasta el cargo de Senior, me gusta colaborar con los equipos de trabajo, proponer nuevas maneras de realizar procesos y proponer nuevas tecnologías, y me gusta participar activamente en esos procesos de migración.`,
+};
+
+export const companies = {
+  title: "Mis trabajos",
+  list: [
+    {
+      name: "Roiback-Latam",
+      liability: "Front-End Developer",
+      date: "12/2021 - Actual",
+      tasks: [
+        "Creación de webs corporativas para cadenas de hoteles.",
+        "Corrección del responsive de webs previamente maquetadas.",
+        "Atención de tickets para corrección de bugs o creación de módulos.",
+        "Configuración de Cookies.",
+        "Creación de componentes rehusables entre proyectos.",
+        "Mantenimiento de librería de la empresa.",
+        "Documentación de procesos corporativos y de desarrollo.",
+        "Revisión de proyectos de otros equipos de trabajo.",
+      ],
+    },
+    {
+      name: "Universidad Nacional de Colombia",
+      liability: "Web Developer",
+      date: "03/2020 - 12/2022",
+      tasks: [
+        "Migración de aplicativos a nuevas tecnologías.",
+        "Mantenimiento de aplicativos en php-laravel y vue.js.",
+        "Creación de componentes rehusables y exportarlos a npm.",
+        "Despliegue de aplicativos en contenedores Docker.",
+        "Test Unitarios y de integración.",
+        "Documentación de aplicativos",
+        "Creación de apis-rest",
+        "Configuración de servidores.",
+      ],
+    },
+  ],
 };

@@ -5,6 +5,7 @@ import FilesDownload from "./Components/FilesDownload";
 import WhatsappPopup from "./Components/WhatsappPopup";
 import AboutMe from "./Components/AboutMe";
 import Footer from "./Components/Footer";
+import CompaniesList from "./Components/CompaniesList";
 import Header from "./Components/Header";
 import {
   background,
@@ -15,6 +16,7 @@ import {
   footer,
   filesDownload,
   aboutMe,
+  companies,
 } from "./Content/Home";
 
 const App = () => {
@@ -28,8 +30,9 @@ const App = () => {
         subtitle={background.subtitle}
         textButton={background.textButton}
       />
-      <JobsList jobs={jobs} id="jobs" />
+      <JobsList jobs={jobs} id="projects" />
       <AboutMe title={aboutMe.title} paragraph={aboutMe.paragraph} />
+      <CompaniesList companies={companies.list} title={companies.title} />
       <SkillsGraphs
         skills={technicalSkills.skills}
         title={technicalSkills.title}
