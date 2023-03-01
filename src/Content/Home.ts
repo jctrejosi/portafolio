@@ -50,6 +50,10 @@ export const header = {
       id: "#jobs",
     },
     {
+      text: "Sobre mí",
+      id: "#aboutMe",
+    },
+    {
       text: "Habilidades técnicas",
       id: "#technicalSkills",
     },
@@ -365,4 +369,11 @@ export const footer = {
     },
   ],
   phrase: "Entre más sopla el viento más fuertes son las raíces del árbol",
+};
+
+export const aboutMe = {
+  title: "sobre mí",
+  paragraph: `Soy un programador con experiencia en frameworks del Front-End y llevo alrededor de 3 años en esta área.
+  Soy una persona curiosa, no me da pena preguntar ni equivocarme, me gusta estar atento a mis compañeros con más experiencia sobre cómo realizan su trabajo, reviso lo que hacen para así aprender de ellos, además también me gusta compartir mi conocimiento, me considero buen escucha y se me da bien la enseñanza.
+  Mis metas más actuales son alcanzar el cargo de desarrollador FullStack, y de allí desarrollarme profesionalmente hasta el cargo de Senior, me gusta colaborar con los equipos de trabajo, proponer nuevas maneras de realizar procesos y proponer nuevas tecnologías, y me gusta participar activamente en esos procesos de migración.`,
 };

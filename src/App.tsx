@@ -3,6 +3,7 @@ import JobsList from "./Components/JobsList";
 import SkillsGraphs from "./Components/SkillsGraphs";
 import FilesDownload from "./Components/FilesDownload";
 import WhatsappPopup from "./Components/WhatsappPopup";
+import AboutMe from "./Components/AboutMe";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import {
@@ -13,6 +14,7 @@ import {
   header,
   footer,
   filesDownload,
+  aboutMe,
 } from "./Content/Home";
 
 const App = () => {
@@ -27,6 +29,7 @@ const App = () => {
         textButton={background.textButton}
       />
       <JobsList jobs={jobs} id="jobs" />
+      <AboutMe title={aboutMe.title} paragraph={aboutMe.paragraph} />
       <SkillsGraphs
         skills={technicalSkills.skills}
         title={technicalSkills.title}

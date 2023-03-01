@@ -17,10 +17,7 @@ const Header = ({ git, navbar }: props): ReactElement => {
   const [dropdown, dropdownNavbar] = useState(false);
   const list = navbar.map((element) => {
     return (
-      <li
-        key={element.id}
-        className="border-x-[.05rem] border-glass-300 py-3 md:first:pl-8 md:last:pr-8"
-      >
+      <li key={element.id} className="border-x-[.05rem] border-glass-300 py-3">
         <button
           className="mx-5 btn-link"
           type="button"
